@@ -13,8 +13,8 @@
 #ifndef VM_H
 # define VM_H
 
-# include "libft.h"
-# include "ft_printf.h"
+# include "../libft/inc/libft.h"
+# include "../ft_printf/ft_printf.h"
 # include <stdbool.h>
 # include <stdlib.h>
 # include "op.h"

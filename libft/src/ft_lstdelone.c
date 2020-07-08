@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vm.h                                               :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dheredat <dheredat@student.21school.ru>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/05 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/05 18:32:43 by ddamaris         ###   ########.fr       */
+/*   Created: 2019/04/23 20:48:13 by dheredat          #+#    #+#             */
+/*   Updated: 2020/05/26 10:14:01 by dheredat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vm.h"
+#include "libft.h"
 
-int			main(int argc, char **argv)
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
-	t_vm *vm;
-
-	if (argc >= 2)
+	if (alst && del)
 	{
-		parsing(argc, argv);
-		print_introducing(vm->players, vm->players_num);
-		run_vm(vm);
-		visualisation;
-		print_winner(vm);
-		free_vm;
+		(*del)((*alst)->content, (*alst)->content_size);
+		free(*alst);
+		*alst = NULL;
 	}
-	else
-		print_usage();
-	return (0);
 }
