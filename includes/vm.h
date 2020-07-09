@@ -48,7 +48,7 @@ typedef struct			s_cursor
 typedef struct			s_vm
 {
 	unsigned char		arena[MEM_SIZE];
-	t_player			*players[MAX_PLAYERS];
+	t_player			*players;
 	int					players_num;
 	t_player			*last_alive;
 	t_cursor			*cursors;
@@ -59,10 +59,16 @@ typedef struct			s_vm
 	ssize_t				cycles_after_check;
 	size_t				checks_num;
 	ssize_t				dump_cycle;
-	int					dump_print_mode;
-	char				live;
-	char				aff;
+	int 				vis_fl;
+	int 				n_fl;
+	int					dump_fl;
+	char				live_fl;
+	char				aff_fl;
 }						t_vm;
+
+void					parse_flags( t_vm *vm, char *arg);
+void					print_usage(void);
+void					print_error(char *error);
 
 
 #endif

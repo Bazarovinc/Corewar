@@ -18,7 +18,7 @@ int			main(int argc, char **argv)
 
 	if (argc >= 2)
 	{
-		parsing(argc, argv);
+		parser(vm, argv);
 		print_introducing(vm->players, vm->players_num);
 		run_vm(vm);
 		visualisation;
