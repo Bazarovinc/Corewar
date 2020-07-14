@@ -12,43 +12,47 @@
 
 #include "../includes/vm.h"
 
-static int	parse_dump_flag(char **argv, t_vm *vm)
+static void	parse_dump_flag(char **argv, t_vm *vm)
 {
-	if (!vm->dump_fl && ft_strtoint(*(*argv + 1), true))
-	{
-		if ((vm->dump_cycle = ft_atoi(*(*argv + 1))) < 0)
-			vm->dump_cycle = -1;
-		vm->dump_fl = 64;
-		(*argv) += 2;
-	}
+	int	num;
+
+	num = 0;
+	if ((num = ft_strtoint(*argv + 1)) >= 0)
+		vm->dump_fl = num;
 	else
-		print_usage();
-	return (1);
+		print_error("ERROR: Wrong argument for -dump");
 }
 
-static void		parse_n_flag(char **argv, t_vm *vm)
+static int		parse_n_flag(char **argv, t_vm *vm)
 {
 	int id;
 
 	id = 0;
-
+	if ((id = ft_strtoint(*argv)) >= 0 && id <= MAX_PLAYERS)
+	{
+		if (ft_strcmp(*(argv + 1), ".cor"))
+			add_player(*(argv + 1), id, vm);
+	}
+	return (1);
 }
 
 void 	parser(t_vm *vm, char **argv)
 {
 	argv++;
-	while (argv)
+	while (*argv)
 	{
-		if (!ft_strcmp(*argv, "-dump") && parse_dump_flag(++argv, vm))
-			argv++;
+		if (!ft_strcmp(*argv, "-dump"))
+			parse_dump_flag(++argv, vm);
 		else if (!ft_strcmp(*argv, "-n") && parse_n_flag(++argv, vm))
 			argv++;
-		else if (!ft_strcmp(*argv, "-visu"))
-			vm->vis_fl = 1;
-		else if (!ft_strcmp(arg, "-aff"))
-			parse_aff(parser, vm);
-		else if (!ft_strcmp(arg, "-alive"))
-			parse_live(parser, vm);
+//		else if (!ft_strcmp(*argv, "-visu"))
+//			vm->vis_fl = 1;
+//		else if (!ft_strcmp(*argv, "-aff"))
+//			parse_aff(parser, vm);
+//		else if (!ft_strcmp(*argv, "-stat"))
+//			vm->stat_fl = 1;
+		else if (file_is_cor(*argv))
+			add_player(*argv, 0, vm);
 		argv++;
 	}
 }

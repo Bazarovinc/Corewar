@@ -12,17 +12,20 @@
 
 #include "../includes/vm.h"
 
-void		print_introducing(t_vm *vm)
+void			print_introducing(t_vm *vm)
 {
 	t_player	*player;
+	int			i;
 
-	player = vm->players;
+	i = 0;
 	ft_printf("Introducing contestants...\n");
-	while (player)
+	while (i < MAX_PLAYERS)
 	{
-		ft_printf("* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
-			player->id, player->code_size, player->name, player->comment);
-		player = player->next;
+		player = vm->players[i];
+		if (player)
+			ft_printf("* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
+				player->id, player->code_size, player->name, player->comment);
+		i++;
 	}
 }
 
@@ -34,8 +37,8 @@ void		print_winner(t_vm *vm)
 
 void		print_usage(void)
 {
-	ft_printf("Usage: ./corewar [ -dump <num> ] "
-			  "[-n <num>] <champion.cor> <...>\n");
+	ft_printf("Usage: ./corewar [ -dump <int num> ] "
+			  "[-n <int num>] <champion.cor> <...>\n");
 	exit(0);
 }
 
