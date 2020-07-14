@@ -28,11 +28,13 @@ static int		parse_n_flag(char **argv, t_vm *vm)
 	int id;
 
 	id = 0;
-	if ((id = ft_strtoint(*argv)) >= 0 && id <= MAX_PLAYERS)
+	if ((id = ft_strtoint(*argv)) > 0 && id <= MAX_PLAYERS)
 	{
 		if (ft_strcmp(*(argv + 1), ".cor"))
 			add_player(*(argv + 1), id, vm);
 	}
+	else
+		print_error("ERROR: Wrong argument for -n");
 	return (1);
 }
 
@@ -55,4 +57,7 @@ void 	parser(t_vm *vm, char **argv)
 			add_player(*argv, 0, vm);
 		argv++;
 	}
+	if (vm->players_num > MAX_PLAYERS)
+		print_error("ERROR: Number of champions exceeds the"
+			  " allowed maximum");
 }

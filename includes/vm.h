@@ -27,22 +27,29 @@ typedef struct			s_player
 	unsigned char		*comment;
 	size_t				code_size;
 	unsigned char		*code;
-	size_t				last_live;
+	size_t				last_live_cycle;
 	size_t				curr_lives_num;
 	size_t				prev_lives_num;
+	int32_t				pc;
 	struct s_player		*next;
 }						t_player;
 
+static int8_t			arg_code[3] = {
+		T_REG,
+		T_DIR,
+		T_IND
+};
+
 typedef struct			s_cursor
 {
-	char				carry;
+	int					carry;
 	unsigned char		op_code;
-	ssize_t				c_last_live;
+	size_t				last_live_cycle;
 	int					cycles_to_exec;
 	unsigned char		args_types[3];
-	ssize_t				pc;
+	int32_t				pc;
 	unsigned int		step;
-	int					reg[REG_NUMBER];
+	int32_t				reg[REG_NUMBER];
 	t_player			*player;
 	struct s_cursor		*next;
 }						t_cursor;
@@ -56,7 +63,7 @@ typedef struct			s_vm
 	t_cursor			*cursors;
 	size_t				cursors_num;
 	size_t				lives_num;
-	size_t				cycles;
+	size_t				cur_cycle;
 	size_t				cycles_to_die;
 	size_t				cycles_after_check;
 	size_t				checks_num;
@@ -250,5 +257,7 @@ int						ft_strtoint(char *str);
 void					parse_champion(int fd, t_player *player);
 unsigned char			*read_str(int fd, size_t len);
 void					*add_player(char *filename, int id, t_vm *vm);
+void					init_cursors(t_vm *vm);
+void					init_arena(t_vm *vm);
 
 #endif

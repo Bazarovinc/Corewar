@@ -23,7 +23,7 @@ t_vm		*init_vm(void)
 	vm->cursors = NULL;
 	vm->cursors_num = 0;
 	vm->lives_num = 0;
-	vm->cycles = 0;
+	vm->cur_cycle = 0;
 	vm->cycles_to_die = CYCLE_TO_DIE;
 	vm->cycles_after_check = 0;
 	vm->checks_num = 0;
@@ -43,8 +43,9 @@ int			main(int argc, char **argv)
 		vm = init_vm();
 		parser(vm, argv);
 		print_introducing(vm);
+		init_arena(vm);
+		init_cursors(vm);
 //		run_vm(vm);
-//		visualisation;
 //		print_winner(vm);
 //		free_vm;
 	}

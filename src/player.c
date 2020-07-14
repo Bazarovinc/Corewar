@@ -23,9 +23,10 @@ static t_player	*init_player(void)
 	player->comment = NULL;
 	player->code_size = 0;
 	player->code = NULL;
-	player->last_live = 0;
+	player->last_live_cycle = 0;
 	player->curr_lives_num = 0;
 	player->prev_lives_num = 0;
+	player->pc = 0;
 	player->next = NULL;
 	return (player);
 }
@@ -65,4 +66,5 @@ void		*add_player(char *filename, int id, t_vm *vm)
 	}
 	else
 		put_player(player, vm);
+	vm->players_num++;
 }
