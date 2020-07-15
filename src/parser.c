@@ -47,17 +47,16 @@ void 	parser(t_vm *vm, char **argv)
 			parse_dump_flag(++argv, vm);
 		else if (!ft_strcmp(*argv, "-n") && parse_n_flag(++argv, vm))
 			argv++;
-//		else if (!ft_strcmp(*argv, "-visu"))
-//			vm->vis_fl = 1;
+		else if (!ft_strcmp(*argv, "-visu"))
+			vm->vis_fl = 1;
 //		else if (!ft_strcmp(*argv, "-aff"))
 //			parse_aff(parser, vm);
-//		else if (!ft_strcmp(*argv, "-stat"))
-//			vm->stat_fl = 1;
+		else if (!ft_strcmp(*argv, "-stat"))
+			vm->stat_fl = 1;
 		else if (file_is_cor(*argv))
 			add_player(*argv, 0, vm);
 		argv++;
 	}
-	if (vm->players_num > MAX_PLAYERS)
-		print_error("ERROR: Number of champions exceeds the"
-			  " allowed maximum");
+	if (vm->players_num > MAX_PLAYERS || vm->players_num == 0)
+		print_error("ERROR: Wrong number of champions");
 }

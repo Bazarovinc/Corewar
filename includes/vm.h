@@ -260,5 +260,6 @@ unsigned char			*read_str(int fd, size_t len);
 void					*add_player(char *filename, int id, t_vm *vm);
 void					init_cursors(t_vm *vm);
 void					init_arena(t_vm *vm);
+void					run_vm(t_vm *vm);
 
 #endif

@@ -44,6 +44,7 @@ void			add_cursor(t_player *player, int32_t pc, t_vm *vm)
 		vm->cursors = cursor;
 		vm->cursors->next = tmp;
 	}
+	vm->cursors_num++;
 }
 void			init_cursors(t_vm *vm)
 {

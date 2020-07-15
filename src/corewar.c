@@ -46,7 +46,7 @@ int			main(int argc, char **argv)
 		init_arena(vm);
 		init_cursors(vm);
 		print_dump(vm->arena);
-//		run_vm(vm);
+		run_vm(vm);
 //		print_winner(vm);
 //		free_vm;
 	}
