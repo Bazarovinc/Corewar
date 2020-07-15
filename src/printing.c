@@ -29,6 +29,26 @@ void			print_introducing(t_vm *vm)
 	}
 }
 
+void			print_dump(u_int8_t *arena)
+{
+	int			i;
+	int			j;
+
+	i = 0;
+	while (i < MEM_SIZE)
+	{
+		ft_printf("%.4p : ", i);
+		j = 0;
+		while (j < 32)
+		{
+			ft_printf("%.2x ", arena[i + j]);
+			j++;
+		}
+		ft_printf("\n");
+		i += 32;
+	}
+}
+
 void		print_winner(t_vm *vm)
 {
 	ft_printf("Contestant %d, \"%s\", has won !\n", \

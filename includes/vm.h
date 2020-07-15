@@ -251,6 +251,7 @@ static t_op				g_op[16] = {
 void					print_introducing(t_vm *vm);
 void					print_usage(void);
 void					print_error(char *error);
+void					print_dump(u_int8_t *arena);
 int						file_is_cor(char *str);
 void					parser(t_vm *vm, char **argv);
 int						ft_strtoint(char *str);
