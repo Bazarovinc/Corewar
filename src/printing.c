@@ -47,6 +47,7 @@ void			print_dump(u_int8_t *arena)
 		ft_printf("\n");
 		i += 32;
 	}
+	print_error("Aborting execution");
 }
 
 void		print_winner(t_vm *vm)
