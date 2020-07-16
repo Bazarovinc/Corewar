@@ -63,3 +63,8 @@ int file_is_cor(char *str)
 	else
 		return (0);
 }
+
+inline int8_t	get_byte(t_vm *vm, int32_t pc, int32_t step)
+{
+    return (vm->arena[calc_addr(pc + step)]);
+}

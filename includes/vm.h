@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/05 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/05 18:32:43 by ddamaris         ###   ########.fr       */
+/*   Updated: 2020/07/16 13:46:07 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,25 @@
 # include <stdlib.h>
 # include "op.h"
 # include <fcntl.h>
+
+# define INDEX(X)		((X) - 1)
+# define FT_ABS(X) (((X) < 0) ? (-(X)) : (X))
+
+# define OP_CODE_LEN	1
+# define ARGS_CODE_LEN	1
+# define REG_LEN		1
+
+# define LIVE_LOG			1
+# define CYCLE_LOG			2
+# define OP_LOG				4
+# define DEATH_LOG			8
+# define PC_MOVEMENT_LOG	16
+
+typedef enum
+{
+    True,
+    False
+}	t_bool;
 
 typedef struct			s_player
 {
@@ -261,5 +280,28 @@ void					*add_player(char *filename, int id, t_vm *vm);
 void					init_cursors(t_vm *vm);
 void					init_arena(t_vm *vm);
 void					run_vm(t_vm *vm);
+inline int8_t           get_byte(t_vm *vm, int32_t pc, int32_t step);
+void                    op_add(t_vm *vm, t_cursor *cursor);
+void                    op_aff(t_vm *vm, t_cursor *cursor);
+void                    op_ld(t_vm *vm, t_cursor *cursor);
+void                    op_fork(t_vm *vm, t_cursor *cursor);
+void					op_lfork(t_vm *vm, t_cursor *cursor);
+void					op_lld(t_vm *vm, t_cursor *cursor);
+void					op_lldi(t_vm *vm, t_cursor *cursor);
+void					op_or(t_vm *vm, t_cursor *cursor);
+void					op_st(t_vm *vm, t_cursor *cursor);
+void					op_sti(t_vm *vm, t_cursor *cursor);
+void					op_sub(t_vm *vm, t_cursor *cursor);
+void					op_xor(t_vm *vm, t_cursor *cursor);
+void					op_zjmp(t_vm *vm, t_cursor *cursor);
+int32_t                 calc_addr(int32_t addr);
+t_cursor                *duplicate_cursor(t_cursor *cursor, int32_t addr);
+void                    add_cursor(t_cursor **list, t_cursor *new);
+int32_t		            bytecode_to_int32(const uint8_t *arena, int32_t addr,
+                                            int32_t size);
+void					int32_to_bytecode(uint8_t *arena, int32_t addr, int32_t value,
+							  int32_t size);
+int32_t                 get_op_arg(t_vm *vm, t_cursor *cursor,
+                                    uint8_t index, t_bool mod);
 
 #endif
