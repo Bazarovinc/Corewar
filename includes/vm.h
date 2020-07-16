@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/05 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/16 13:46:07 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/16 13:48:30 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -296,7 +296,7 @@ void					op_xor(t_vm *vm, t_cursor *cursor);
 void					op_zjmp(t_vm *vm, t_cursor *cursor);
 int32_t                 calc_addr(int32_t addr);
 t_cursor                *duplicate_cursor(t_cursor *cursor, int32_t addr);
-void                    add_cursor(t_cursor **list, t_cursor *new);
+void                    add_cursor_1(t_cursor **list, t_cursor *new);
 int32_t		            bytecode_to_int32(const uint8_t *arena, int32_t addr,
                                             int32_t size);
 void					int32_to_bytecode(uint8_t *arena, int32_t addr, int32_t value,

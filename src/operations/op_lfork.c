@@ -6,7 +6,7 @@
 /*   By: vbrazhni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 11:54:46 by ablizniu          #+#    #+#             */
-/*   Updated: 2020/07/15 21:12:53 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/16 13:21:10 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void				op_lfork(t_vm *vm, t_cursor *cursor)
 	cursor->step += OP_CODE_LEN;
 	addr = get_op_arg(vm, cursor, 1, true);
 	new = duplicate_cursor(cursor, addr);
-	add_cursor(&(vm->cursors), new);
+	add_cursor_1(&(vm->cursors), new);
 	vm->cursors_num++;
 	/*if (vm->log & OP_LOG)
 		log_lfork(cursor, addr);*/
