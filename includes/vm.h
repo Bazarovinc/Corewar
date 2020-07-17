@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/05 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/05 18:32:43 by ddamaris         ###   ########.fr       */
+/*   Updated: 2020/07/17 21:47:31 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,6 @@ typedef struct			s_op
 	char				modify_carry;
 	int8_t				t_dir_size;
 	unsigned int		cycles;
-	void				(*func)(t_vm *, t_cursor *);
 }						t_op;
 
 static t_op				op_tab[16] = {
@@ -96,7 +95,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = false,
 			.t_dir_size = 4,
 			.cycles = 10,
-//			.func = &op_live
 		},
 		{
 			.name = "ld",
@@ -107,8 +105,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = true,
 			.t_dir_size = 4,
 			.cycles = 5,
-//			.func = &op_ld
-
 		},
 		{
 			.name = "st",
@@ -119,7 +115,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = false,
 			.t_dir_size = 4,
 			.cycles = 5,
-//			.func = &op_st
 		},
 		{
 			.name = "add",
@@ -130,7 +125,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = true,
 			.t_dir_size = 4,
 			.cycles = 10,
-//			.func = &op_add
 		},
 		{
 			.name = "sub",
@@ -141,7 +135,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = true,
 			.t_dir_size = 4,
 			.cycles = 10,
-//			.func = &op_sub
 		},
 		{
 			.name = "and",
@@ -152,7 +145,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = true,
 			.t_dir_size = 4,
 			.cycles = 6,
-//			.func = &op_and
 		},
 		{
 			.name = "or",
@@ -163,7 +155,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = true,
 			.t_dir_size = 4,
 			.cycles = 6,
-//			.func = &op_or
 		},
 		{
 			.name = "xor",
@@ -174,7 +165,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = true,
 			.t_dir_size = 4,
 			.cycles = 6,
-//			.func = &op_xor
 		},
 		{
 			.name = "zjmp",
@@ -185,7 +175,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = false,
 			.t_dir_size = 2,
 			.cycles = 20,
-//			.func = &op_zjmp
 		},
 		{
 			.name = "ldi",
@@ -196,7 +185,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = false,
 			.t_dir_size = 2,
 			.cycles = 25,
-//			.func = &op_ldi
 		},
 		{
 			.name = "sti",
@@ -207,7 +195,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = false,
 			.t_dir_size = 2,
 			.cycles = 25,
-//			.func = &op_sti
 		},
 		{
 			.name = "fork",
@@ -218,7 +205,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = false,
 			.t_dir_size = 2,
 			.cycles = 800,
-//			.func = &op_fork
 		},
 		{
 			.name = "lld",
@@ -229,7 +215,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = true,
 			.t_dir_size = 4,
 			.cycles = 10,
-//			.func = &op_lld
 		},
 		{
 			.name = "lldi",
@@ -240,7 +225,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = true,
 			.t_dir_size = 2,
 			.cycles = 50,
-//			.func = &op_lldi
 		},
 		{
 			.name = "lfork",
@@ -251,7 +235,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = false,
 			.t_dir_size = 2,
 			.cycles = 1000,
-//			.func = &op_lfork
 		},
 		{
 			.name = "aff",
@@ -262,7 +245,6 @@ static t_op				op_tab[16] = {
 			.modify_carry = false,
 			.t_dir_size = 4,
 			.cycles = 2,
-//			.func = &op_aff
 		}
 };
 
@@ -278,12 +260,6 @@ unsigned char			*read_str(int fd, size_t len);
 void					*add_player(char *filename, int id, t_vm *vm);
 void					init_cursors(t_vm *vm);
 void					init_arena(t_vm *vm);
-void					init_cursor(t_player *player, t_cursor *cursor,
-							int32_t pc);
 void					run_vm(t_vm *vm);
-int						step_over_arg(int8_t arg_type, t_op *op);
-int32_t					calc_step(t_cursor *cursor, t_op *op);
-int32_t					address_norming(int32_t addr);
-void					check_and_delete(t_vm *vm);
 
 #endif

@@ -6,17 +6,11 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/13 14:32:43 by ddamaris         ###   ########.fr       */
+/*   Updated: 2020/07/17 21:47:31 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/vm.h"
-
-int32_t				address_norming(int32_t pntr)
-{
-	return ((pntr < 0) ? ((pntr % MEM_SIZE) + MEM_SIZE) :
-		(pntr % MEM_SIZE));
-}
 
 static int	is_positive_number(char *string)
 {
@@ -41,19 +35,18 @@ static int	is_positive_number(char *string)
 	return (1);
 }
 
-int			ft_strtoint(char *str)
+int    	ft_strtoint(char *str)
 {
 	long	num;
 	char	*s;
 
-	s = str;
 	num = 0;
 	if (is_positive_number(str))
 	{
-		if (*s == '+')
-			s++;
-		while (*s)
-			num = num * 10 + (*s++ - '0');
+		if (*str == '+')
+			str++;
+		while (*str)
+			num = num * 10 + (*str++ - '0');
 		if (num >= 0 && num <= 2147483647)
 			return ((int) num);
 	}
@@ -61,7 +54,7 @@ int			ft_strtoint(char *str)
 		return (-1);
 }
 
-int			file_is_cor(char *str)
+int file_is_cor(char *str)
 {
 	while (*str && *str != '.')
 		str++;
