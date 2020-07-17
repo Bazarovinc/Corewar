@@ -6,13 +6,13 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 22:09:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/14 22:12:43 by ddamaris         ###   ########.fr       */
+/*   Updated: 2020/07/17 21:55:08 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vm.h"
 
-static void			init_cursor(t_player *player, t_cursor *cursor, int32_t pc)
+void			init_cursor(t_player *player, t_cursor *cursor, int32_t pc)
 {
 	int32_t		cursor_id;
 

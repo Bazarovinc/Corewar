@@ -6,11 +6,81 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/15 12:34:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/15 12:36:43 by ddamaris         ###   ########.fr       */
+/*   Updated: 2020/07/17 21:55:08 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vm.h"
+
+static int		check_args(t_cursor *cursor, t_op *op, t_vm *vm)
+{
+	int32_t		i;
+	int32_t		step;
+	int8_t		reg;
+
+	i = 0;
+	step = (op->args_types_code) ? 2 : 1;
+	while (i < op->args_num)
+	{
+		if (!(cursor->args_types[i] & op->args_types[i]))
+			return (0);
+		if (cursor->args_types[i] == T_REG)
+		{
+			reg = vm->arena[cursor->pc + step];
+			if (reg < 1 || reg > REG_NUMBER)
+				return (0);
+		}
+		step += step_size(cursor->args_types[i], op);
+		i++;
+	}
+	return (1);
+}
+
+static void 	parse_args_types(t_cursor *cursor, t_op *op, t_vm *vm)
+{
+	int8_t		args_types_code;
+
+	if (op->args_types_code)
+	{
+		args_types_code = vm->arena[cursor->pc + 1];
+		if (op->args_num >= 1)
+			cursor->args_types[0] = (args_types_code & 0xC0) >> 6;
+		if (op->args_num >= 2)
+			cursor->args_types[1] = (args_types_code & 0x30) >> 4;
+		if (op->args_num >= 3)
+			cursor->args_types[2] = (args_types_code & 0xC) >> 2;
+	}
+	else
+		cursor->args_types[0] = op->args_types[0];
+}
+
+static void		do_operation(t_cursor *cursor, t_vm *vm)
+{
+	t_op *op;
+
+	if (cursor->cycles_to_exec > 0)
+		cursor->cycles_to_exec--;
+	else if (cursor->cycles_to_exec == 0)
+	{
+		cursor->op_code = vm->arena[cursor->pc];
+		op = NULL;
+		if (cursor->op_code >= 0x01 && cursor->op_code <= 0x10)
+		{
+			cursor->cycles_to_exec = op_tab[cursor->op_code - 1].cycles;
+			op = &op_tab[cursor->op_code - 1];
+			parse_args_types(cursor, op, vm);
+			if (check_args(cursor, op, vm))
+				op->func(vm, cursor);
+			else
+				cursor->step += calc_step(cursor, op);
+			if (vm->log & PC_MOVEMENT_LOG && cursor->step)
+				log_pc_movements(vm->arena, cursor);
+		}
+		else
+			cursor->step = 1;
+		move_cursor(vm, cursor);
+	}
+}
 
 void			run_vm(t_vm *vm)
 {
@@ -19,12 +89,9 @@ void			run_vm(t_vm *vm)
 	while (vm->cursors_num)
 	{
 		if (vm->dump_fl == vm->cur_cycle)
-		{
 			print_dump(vm->arena);
-			print_error("Aborting execution");
-		}
-		cursor = vm->cursors;
-		while (currsor)
+				cursor = vm->cursors;
+		while (cursor)
 		{
 			do_operation(cursor, vm);
 			cursor = cursor->next;

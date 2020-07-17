@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 17:00:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/08 17:00:43 by ddamaris         ###   ########.fr       */
+/*   Updated: 2020/07/17 21:55:08 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ void			print_dump(u_int8_t *arena)
 		ft_printf("\n");
 		i += 32;
 	}
+	print_error("Aborting execution");
 }
 
 void		print_winner(t_vm *vm)

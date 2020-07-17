@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/13 14:32:43 by ddamaris         ###   ########.fr       */
+/*   Updated: 2020/07/17 21:55:08 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,9 +62,4 @@ int file_is_cor(char *str)
 		return (1);
 	else
 		return (0);
-}
-
-inline int8_t	get_byte(t_vm *vm, int32_t pc, int32_t step)
-{
-    return (vm->arena[calc_addr(pc + step)]);
 }
