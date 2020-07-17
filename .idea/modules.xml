@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/.idea/Corewar.iml" filepath="$PROJECT_DIR$/.idea/Corewar.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/.idea/ddamaris.iml" filepath="$PROJECT_DIR$/.idea/ddamaris.iml" />
->>>>>>> vm_ddamaris
+      <module fileurl="file://$PROJECT_DIR$/.idea/working.iml" filepath="$PROJECT_DIR$/.idea/working.iml" />
     </modules>
   </component>
 </project>

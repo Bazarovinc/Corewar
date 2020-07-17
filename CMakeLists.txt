@@ -1,13 +1,17 @@
 cmake_minimum_required(VERSION 3.16)
-project(ddamaris C)
+project(working C)
 
 set(CMAKE_C_STANDARD 11)
 
+include_directories(.)
 include_directories(ft_printf)
 include_directories(includes)
+include_directories(libft)
 include_directories(libft/inc)
+include_directories(libft/src)
+include_directories(src)
 
-add_executable(ddamaris
+add_executable(working
         ft_printf/ft_bzero.c
         ft_printf/ft_is_flag.c
         ft_printf/ft_printf.c
@@ -81,11 +85,31 @@ add_executable(ddamaris
         libft/src/ft_strtrim.c
         libft/src/ft_tolower.c
         libft/src/ft_toupper.c
+        src/operations/op_add.c
+        src/operations/op_aff.c
+        src/operations/op_and.c
+        src/operations/op_fork.c
+        src/operations/op_ld.c
+        src/operations/op_ldi.c
+        src/operations/op_lfork.c
+        src/operations/op_live.c
+        src/operations/op_lld.c
+        src/operations/op_lldi.c
+        src/operations/op_or.c
+        src/operations/op_st.c
+        src/operations/op_sti.c
+        src/operations/op_sub.c
+        src/operations/op_xor.c
+        src/operations/op_zjmp.c
+        src/operations/utils.c
+        src/calculations.c
+        src/check_to_die.c
         src/corewar.c
         src/init_game.c
         src/parse_champion.c
         src/parser.c
         src/player.c
         src/printing.c
+        src/step.c
         src/utils1.c
         src/virtual_machine.c)

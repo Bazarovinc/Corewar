@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/ctelma/Desktop/ddamaris/ft_printf -I/home/ctelma/Desktop/ddamaris/includes -I/home/ctelma/Desktop/ddamaris/libft/inc 
+C_INCLUDES = -I/home/yzu/coding/working/ft_printf -I/home/yzu/coding/working/includes -I/home/yzu/coding/working/libft/inc 
 

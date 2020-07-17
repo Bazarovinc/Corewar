@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/ctelma/Desktop/clion-2020.1.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/clion-2020.1.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/ctelma/Desktop/clion-2020.1.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /opt/clion-2020.1.2/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ctelma/Desktop/ddamaris
+CMAKE_SOURCE_DIR = /home/yzu/coding/working
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ctelma/Desktop/ddamaris/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yzu/coding/working/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ddamaris.dir/depend.make
@@ -59,1004 +59,1004 @@ include CMakeFiles/ddamaris.dir/flags.make
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.o: ../ft_printf/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/ft_bzero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.o   -c /home/yzu/coding/working/ft_printf/ft_bzero.c
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/ft_bzero.c > CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/ft_bzero.c > CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/ft_bzero.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/ft_bzero.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_bzero.c.s
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.o: ../ft_printf/ft_is_flag.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/ft_is_flag.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.o   -c /home/yzu/coding/working/ft_printf/ft_is_flag.c
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/ft_is_flag.c > CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/ft_is_flag.c > CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/ft_is_flag.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/ft_is_flag.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_is_flag.c.s
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.o: ../ft_printf/ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/ft_printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.o   -c /home/yzu/coding/working/ft_printf/ft_printf.c
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/ft_printf.c > CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/ft_printf.c > CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/ft_printf.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/ft_printf.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_printf.c.s
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.o: ../ft_printf/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.o   -c /home/yzu/coding/working/ft_printf/ft_strlen.c
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/ft_strlen.c > CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/ft_strlen.c > CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/ft_strlen.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/ft_strlen.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_strlen.c.s
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.o: ../ft_printf/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/ft_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.o   -c /home/yzu/coding/working/ft_printf/ft_strnew.c
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/ft_strnew.c > CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/ft_strnew.c > CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/ft_strnew.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/ft_strnew.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_strnew.c.s
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.o: ../ft_printf/ft_work_out.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/ft_work_out.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.o   -c /home/yzu/coding/working/ft_printf/ft_work_out.c
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/ft_work_out.c > CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/ft_work_out.c > CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/ft_work_out.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/ft_work_out.c -o CMakeFiles/ddamaris.dir/ft_printf/ft_work_out.c.s
 
 CMakeFiles/ddamaris.dir/ft_printf/long_math.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/long_math.c.o: ../ft_printf/long_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ddamaris.dir/ft_printf/long_math.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/long_math.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/long_math.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ddamaris.dir/ft_printf/long_math.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/long_math.c.o   -c /home/yzu/coding/working/ft_printf/long_math.c
 
 CMakeFiles/ddamaris.dir/ft_printf/long_math.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/long_math.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/long_math.c > CMakeFiles/ddamaris.dir/ft_printf/long_math.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/long_math.c > CMakeFiles/ddamaris.dir/ft_printf/long_math.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/long_math.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/long_math.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/long_math.c -o CMakeFiles/ddamaris.dir/ft_printf/long_math.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/long_math.c -o CMakeFiles/ddamaris.dir/ft_printf/long_math.c.s
 
 CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.o: ../ft_printf/str_longmath.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/str_longmath.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.o   -c /home/yzu/coding/working/ft_printf/str_longmath.c
 
 CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/str_longmath.c > CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/str_longmath.c > CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/str_longmath.c -o CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/str_longmath.c -o CMakeFiles/ddamaris.dir/ft_printf/str_longmath.c.s
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.o: ../ft_printf/work_out_char.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/work_out_char.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.o   -c /home/yzu/coding/working/ft_printf/work_out_char.c
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/work_out_char.c > CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/work_out_char.c > CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/work_out_char.c -o CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/work_out_char.c -o CMakeFiles/ddamaris.dir/ft_printf/work_out_char.c.s
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.o: ../ft_printf/work_out_d.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/work_out_d.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.o   -c /home/yzu/coding/working/ft_printf/work_out_d.c
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/work_out_d.c > CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/work_out_d.c > CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/work_out_d.c -o CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/work_out_d.c -o CMakeFiles/ddamaris.dir/ft_printf/work_out_d.c.s
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.o: ../ft_printf/work_out_f.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/work_out_f.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.o   -c /home/yzu/coding/working/ft_printf/work_out_f.c
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/work_out_f.c > CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/work_out_f.c > CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/work_out_f.c -o CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/work_out_f.c -o CMakeFiles/ddamaris.dir/ft_printf/work_out_f.c.s
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.o: ../ft_printf/work_out_uxo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.o   -c /home/ctelma/Desktop/ddamaris/ft_printf/work_out_uxo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.o   -c /home/yzu/coding/working/ft_printf/work_out_uxo.c
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/ft_printf/work_out_uxo.c > CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/ft_printf/work_out_uxo.c > CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.i
 
 CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/ft_printf/work_out_uxo.c -o CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/ft_printf/work_out_uxo.c -o CMakeFiles/ddamaris.dir/ft_printf/work_out_uxo.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.o: ../libft/src/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.o   -c /home/yzu/coding/working/libft/src/ft_atoi.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_atoi.c > CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_atoi.c > CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_atoi.c -o CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_atoi.c -o CMakeFiles/ddamaris.dir/libft/src/ft_atoi.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.o: ../libft/src/ft_bzero_safe.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_bzero_safe.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.o   -c /home/yzu/coding/working/libft/src/ft_bzero_safe.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_bzero_safe.c > CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_bzero_safe.c > CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_bzero_safe.c -o CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_bzero_safe.c -o CMakeFiles/ddamaris.dir/libft/src/ft_bzero_safe.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.o: ../libft/src/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_isalnum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.o   -c /home/yzu/coding/working/libft/src/ft_isalnum.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_isalnum.c > CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_isalnum.c > CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_isalnum.c -o CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_isalnum.c -o CMakeFiles/ddamaris.dir/libft/src/ft_isalnum.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.o: ../libft/src/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_isalpha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.o   -c /home/yzu/coding/working/libft/src/ft_isalpha.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_isalpha.c > CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_isalpha.c > CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_isalpha.c -o CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_isalpha.c -o CMakeFiles/ddamaris.dir/libft/src/ft_isalpha.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.o: ../libft/src/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_isascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.o   -c /home/yzu/coding/working/libft/src/ft_isascii.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_isascii.c > CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_isascii.c > CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_isascii.c -o CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_isascii.c -o CMakeFiles/ddamaris.dir/libft/src/ft_isascii.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.o: ../libft/src/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.o   -c /home/yzu/coding/working/libft/src/ft_isdigit.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_isdigit.c > CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_isdigit.c > CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_isdigit.c -o CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_isdigit.c -o CMakeFiles/ddamaris.dir/libft/src/ft_isdigit.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.o: ../libft/src/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_isprint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.o   -c /home/yzu/coding/working/libft/src/ft_isprint.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_isprint.c > CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_isprint.c > CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_isprint.c -o CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_isprint.c -o CMakeFiles/ddamaris.dir/libft/src/ft_isprint.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.o: ../libft/src/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.o   -c /home/yzu/coding/working/libft/src/ft_itoa.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_itoa.c > CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_itoa.c > CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_itoa.c -o CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_itoa.c -o CMakeFiles/ddamaris.dir/libft/src/ft_itoa.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.o: ../libft/src/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_lstadd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.o   -c /home/yzu/coding/working/libft/src/ft_lstadd.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_lstadd.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_lstadd.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_lstadd.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_lstadd.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstadd.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.o: ../libft/src/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_lstdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.o   -c /home/yzu/coding/working/libft/src/ft_lstdel.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_lstdel.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_lstdel.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_lstdel.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_lstdel.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstdel.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.o: ../libft/src/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_lstdelone.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.o   -c /home/yzu/coding/working/libft/src/ft_lstdelone.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_lstdelone.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_lstdelone.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_lstdelone.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_lstdelone.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstdelone.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.o: ../libft/src/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_lstiter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.o   -c /home/yzu/coding/working/libft/src/ft_lstiter.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_lstiter.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_lstiter.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_lstiter.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_lstiter.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstiter.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.o: ../libft/src/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_lstmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.o   -c /home/yzu/coding/working/libft/src/ft_lstmap.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_lstmap.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_lstmap.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_lstmap.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_lstmap.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstmap.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.o: ../libft/src/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_lstnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.o   -c /home/yzu/coding/working/libft/src/ft_lstnew.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_lstnew.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_lstnew.c > CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_lstnew.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_lstnew.c -o CMakeFiles/ddamaris.dir/libft/src/ft_lstnew.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.o: ../libft/src/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_memalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.o   -c /home/yzu/coding/working/libft/src/ft_memalloc.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_memalloc.c > CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_memalloc.c > CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_memalloc.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_memalloc.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memalloc.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.o: ../libft/src/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_memccpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.o   -c /home/yzu/coding/working/libft/src/ft_memccpy.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_memccpy.c > CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_memccpy.c > CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_memccpy.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_memccpy.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memccpy.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.o: ../libft/src/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_memchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.o   -c /home/yzu/coding/working/libft/src/ft_memchr.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_memchr.c > CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_memchr.c > CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_memchr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_memchr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memchr.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.o: ../libft/src/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_memcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.o   -c /home/yzu/coding/working/libft/src/ft_memcmp.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_memcmp.c > CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_memcmp.c > CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_memcmp.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_memcmp.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memcmp.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.o: ../libft/src/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_memcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.o   -c /home/yzu/coding/working/libft/src/ft_memcpy.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_memcpy.c > CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_memcpy.c > CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_memcpy.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_memcpy.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memcpy.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.o: ../libft/src/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_memdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.o   -c /home/yzu/coding/working/libft/src/ft_memdel.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_memdel.c > CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_memdel.c > CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_memdel.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_memdel.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memdel.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.o: ../libft/src/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_memmove.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.o   -c /home/yzu/coding/working/libft/src/ft_memmove.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_memmove.c > CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_memmove.c > CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_memmove.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_memmove.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memmove.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.o: ../libft/src/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.o   -c /home/yzu/coding/working/libft/src/ft_memset.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_memset.c > CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_memset.c > CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_memset.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_memset.c -o CMakeFiles/ddamaris.dir/libft/src/ft_memset.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.o: ../libft/src/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_putchar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.o   -c /home/yzu/coding/working/libft/src/ft_putchar.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_putchar.c > CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_putchar.c > CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_putchar.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_putchar.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putchar.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.o: ../libft/src/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.o   -c /home/yzu/coding/working/libft/src/ft_putchar_fd.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_putchar_fd.c > CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_putchar_fd.c > CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_putchar_fd.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_putchar_fd.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putchar_fd.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.o: ../libft/src/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_putendl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.o   -c /home/yzu/coding/working/libft/src/ft_putendl.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_putendl.c > CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_putendl.c > CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_putendl.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_putendl.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putendl.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.o: ../libft/src/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_putendl_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.o   -c /home/yzu/coding/working/libft/src/ft_putendl_fd.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_putendl_fd.c > CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_putendl_fd.c > CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_putendl_fd.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_putendl_fd.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putendl_fd.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.o: ../libft/src/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_putnbr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.o   -c /home/yzu/coding/working/libft/src/ft_putnbr.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_putnbr.c > CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_putnbr.c > CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_putnbr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_putnbr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putnbr.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.o: ../libft/src/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_putnbr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.o   -c /home/yzu/coding/working/libft/src/ft_putnbr_fd.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_putnbr_fd.c > CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_putnbr_fd.c > CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_putnbr_fd.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_putnbr_fd.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putnbr_fd.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.o: ../libft/src/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_putstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.o   -c /home/yzu/coding/working/libft/src/ft_putstr.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_putstr.c > CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_putstr.c > CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_putstr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_putstr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putstr.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.o: ../libft/src/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.o   -c /home/yzu/coding/working/libft/src/ft_putstr_fd.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_putstr_fd.c > CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_putstr_fd.c > CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_putstr_fd.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_putstr_fd.c -o CMakeFiles/ddamaris.dir/libft/src/ft_putstr_fd.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.o: ../libft/src/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.o   -c /home/yzu/coding/working/libft/src/ft_strcat.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strcat.c > CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strcat.c > CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strcat.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strcat.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strcat.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.o: ../libft/src/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.o   -c /home/yzu/coding/working/libft/src/ft_strchr.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strchr.c > CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strchr.c > CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strchr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strchr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strchr.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.o: ../libft/src/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strclr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.o   -c /home/yzu/coding/working/libft/src/ft_strclr.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strclr.c > CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strclr.c > CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strclr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strclr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strclr.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.o: ../libft/src/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.o   -c /home/yzu/coding/working/libft/src/ft_strcmp.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strcmp.c > CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strcmp.c > CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strcmp.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strcmp.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strcmp.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.o: ../libft/src/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.o   -c /home/yzu/coding/working/libft/src/ft_strcpy.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strcpy.c > CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strcpy.c > CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strcpy.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strcpy.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strcpy.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.o: ../libft/src/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.o   -c /home/yzu/coding/working/libft/src/ft_strdel.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strdel.c > CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strdel.c > CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strdel.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strdel.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strdel.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.o: ../libft/src/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.o   -c /home/yzu/coding/working/libft/src/ft_strdup.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strdup.c > CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strdup.c > CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strdup.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strdup.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strdup.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.o: ../libft/src/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.o   -c /home/yzu/coding/working/libft/src/ft_strequ.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strequ.c > CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strequ.c > CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strequ.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strequ.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strequ.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.o: ../libft/src/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_striter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.o   -c /home/yzu/coding/working/libft/src/ft_striter.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_striter.c > CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_striter.c > CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_striter.c -o CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_striter.c -o CMakeFiles/ddamaris.dir/libft/src/ft_striter.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.o: ../libft/src/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_striteri.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.o   -c /home/yzu/coding/working/libft/src/ft_striteri.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_striteri.c > CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_striteri.c > CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_striteri.c -o CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_striteri.c -o CMakeFiles/ddamaris.dir/libft/src/ft_striteri.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.o: ../libft/src/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.o   -c /home/yzu/coding/working/libft/src/ft_strjoin.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strjoin.c > CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strjoin.c > CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strjoin.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strjoin.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strjoin.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.o: ../libft/src/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strlcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.o   -c /home/yzu/coding/working/libft/src/ft_strlcat.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strlcat.c > CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strlcat.c > CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strlcat.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strlcat.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strlcat.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.o: ../libft/src/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.o   -c /home/yzu/coding/working/libft/src/ft_strmap.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strmap.c > CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strmap.c > CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strmap.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strmap.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strmap.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.o: ../libft/src/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strmapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.o   -c /home/yzu/coding/working/libft/src/ft_strmapi.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strmapi.c > CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strmapi.c > CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strmapi.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strmapi.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strmapi.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.o: ../libft/src/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strncat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.o   -c /home/yzu/coding/working/libft/src/ft_strncat.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strncat.c > CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strncat.c > CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strncat.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strncat.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strncat.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.o: ../libft/src/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strncmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.o   -c /home/yzu/coding/working/libft/src/ft_strncmp.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strncmp.c > CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strncmp.c > CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strncmp.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strncmp.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strncmp.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.o: ../libft/src/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strncpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.o   -c /home/yzu/coding/working/libft/src/ft_strncpy.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strncpy.c > CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strncpy.c > CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strncpy.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strncpy.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strncpy.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.o: ../libft/src/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strnequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.o   -c /home/yzu/coding/working/libft/src/ft_strnequ.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strnequ.c > CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strnequ.c > CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strnequ.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strnequ.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strnequ.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.o: ../libft/src/ft_strnlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strnlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.o   -c /home/yzu/coding/working/libft/src/ft_strnlen.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strnlen.c > CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strnlen.c > CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strnlen.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strnlen.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strnlen.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.o: ../libft/src/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strnstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.o   -c /home/yzu/coding/working/libft/src/ft_strnstr.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strnstr.c > CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strnstr.c > CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strnstr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strnstr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strnstr.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.o: ../libft/src/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.o   -c /home/yzu/coding/working/libft/src/ft_strrchr.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strrchr.c > CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strrchr.c > CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strrchr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strrchr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strrchr.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.o: ../libft/src/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.o   -c /home/yzu/coding/working/libft/src/ft_strsplit.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strsplit.c > CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strsplit.c > CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strsplit.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strsplit.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strsplit.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.o: ../libft/src/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.o   -c /home/yzu/coding/working/libft/src/ft_strstr.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strstr.c > CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strstr.c > CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strstr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strstr.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strstr.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.o: ../libft/src/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.o   -c /home/yzu/coding/working/libft/src/ft_strsub.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strsub.c > CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strsub.c > CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strsub.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strsub.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strsub.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.o: ../libft/src/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_strtrim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.o   -c /home/yzu/coding/working/libft/src/ft_strtrim.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_strtrim.c > CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_strtrim.c > CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_strtrim.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_strtrim.c -o CMakeFiles/ddamaris.dir/libft/src/ft_strtrim.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.o: ../libft/src/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_tolower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.o   -c /home/yzu/coding/working/libft/src/ft_tolower.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_tolower.c > CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_tolower.c > CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_tolower.c -o CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_tolower.c -o CMakeFiles/ddamaris.dir/libft/src/ft_tolower.c.s
 
 CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.o: ../libft/src/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.o   -c /home/ctelma/Desktop/ddamaris/libft/src/ft_toupper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.o   -c /home/yzu/coding/working/libft/src/ft_toupper.c
 
 CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/libft/src/ft_toupper.c > CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/libft/src/ft_toupper.c > CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.i
 
 CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/libft/src/ft_toupper.c -o CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/libft/src/ft_toupper.c -o CMakeFiles/ddamaris.dir/libft/src/ft_toupper.c.s
 
 CMakeFiles/ddamaris.dir/src/corewar.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/src/corewar.c.o: ../src/corewar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ddamaris.dir/src/corewar.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/corewar.c.o   -c /home/ctelma/Desktop/ddamaris/src/corewar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ddamaris.dir/src/corewar.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/corewar.c.o   -c /home/yzu/coding/working/src/corewar.c
 
 CMakeFiles/ddamaris.dir/src/corewar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/src/corewar.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/src/corewar.c > CMakeFiles/ddamaris.dir/src/corewar.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/src/corewar.c > CMakeFiles/ddamaris.dir/src/corewar.c.i
 
 CMakeFiles/ddamaris.dir/src/corewar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/src/corewar.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/src/corewar.c -o CMakeFiles/ddamaris.dir/src/corewar.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/src/corewar.c -o CMakeFiles/ddamaris.dir/src/corewar.c.s
 
 CMakeFiles/ddamaris.dir/src/init_game.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/src/init_game.c.o: ../src/init_game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ddamaris.dir/src/init_game.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/init_game.c.o   -c /home/ctelma/Desktop/ddamaris/src/init_game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ddamaris.dir/src/init_game.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/init_game.c.o   -c /home/yzu/coding/working/src/init_game.c
 
 CMakeFiles/ddamaris.dir/src/init_game.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/src/init_game.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/src/init_game.c > CMakeFiles/ddamaris.dir/src/init_game.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/src/init_game.c > CMakeFiles/ddamaris.dir/src/init_game.c.i
 
 CMakeFiles/ddamaris.dir/src/init_game.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/src/init_game.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/src/init_game.c -o CMakeFiles/ddamaris.dir/src/init_game.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/src/init_game.c -o CMakeFiles/ddamaris.dir/src/init_game.c.s
 
 CMakeFiles/ddamaris.dir/src/parse_champion.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/src/parse_champion.c.o: ../src/parse_champion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ddamaris.dir/src/parse_champion.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/parse_champion.c.o   -c /home/ctelma/Desktop/ddamaris/src/parse_champion.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ddamaris.dir/src/parse_champion.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/parse_champion.c.o   -c /home/yzu/coding/working/src/parse_champion.c
 
 CMakeFiles/ddamaris.dir/src/parse_champion.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/src/parse_champion.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/src/parse_champion.c > CMakeFiles/ddamaris.dir/src/parse_champion.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/src/parse_champion.c > CMakeFiles/ddamaris.dir/src/parse_champion.c.i
 
 CMakeFiles/ddamaris.dir/src/parse_champion.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/src/parse_champion.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/src/parse_champion.c -o CMakeFiles/ddamaris.dir/src/parse_champion.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/src/parse_champion.c -o CMakeFiles/ddamaris.dir/src/parse_champion.c.s
 
 CMakeFiles/ddamaris.dir/src/parser.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/src/parser.c.o: ../src/parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ddamaris.dir/src/parser.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/parser.c.o   -c /home/ctelma/Desktop/ddamaris/src/parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ddamaris.dir/src/parser.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/parser.c.o   -c /home/yzu/coding/working/src/parser.c
 
 CMakeFiles/ddamaris.dir/src/parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/src/parser.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/src/parser.c > CMakeFiles/ddamaris.dir/src/parser.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/src/parser.c > CMakeFiles/ddamaris.dir/src/parser.c.i
 
 CMakeFiles/ddamaris.dir/src/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/src/parser.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/src/parser.c -o CMakeFiles/ddamaris.dir/src/parser.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/src/parser.c -o CMakeFiles/ddamaris.dir/src/parser.c.s
 
 CMakeFiles/ddamaris.dir/src/player.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/src/player.c.o: ../src/player.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ddamaris.dir/src/player.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/player.c.o   -c /home/ctelma/Desktop/ddamaris/src/player.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ddamaris.dir/src/player.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/player.c.o   -c /home/yzu/coding/working/src/player.c
 
 CMakeFiles/ddamaris.dir/src/player.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/src/player.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/src/player.c > CMakeFiles/ddamaris.dir/src/player.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/src/player.c > CMakeFiles/ddamaris.dir/src/player.c.i
 
 CMakeFiles/ddamaris.dir/src/player.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/src/player.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/src/player.c -o CMakeFiles/ddamaris.dir/src/player.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/src/player.c -o CMakeFiles/ddamaris.dir/src/player.c.s
 
 CMakeFiles/ddamaris.dir/src/printing.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/src/printing.c.o: ../src/printing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/ddamaris.dir/src/printing.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/printing.c.o   -c /home/ctelma/Desktop/ddamaris/src/printing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/ddamaris.dir/src/printing.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/printing.c.o   -c /home/yzu/coding/working/src/printing.c
 
 CMakeFiles/ddamaris.dir/src/printing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/src/printing.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/src/printing.c > CMakeFiles/ddamaris.dir/src/printing.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/src/printing.c > CMakeFiles/ddamaris.dir/src/printing.c.i
 
 CMakeFiles/ddamaris.dir/src/printing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/src/printing.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/src/printing.c -o CMakeFiles/ddamaris.dir/src/printing.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/src/printing.c -o CMakeFiles/ddamaris.dir/src/printing.c.s
 
 CMakeFiles/ddamaris.dir/src/utils1.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/src/utils1.c.o: ../src/utils1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/ddamaris.dir/src/utils1.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/utils1.c.o   -c /home/ctelma/Desktop/ddamaris/src/utils1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/ddamaris.dir/src/utils1.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/utils1.c.o   -c /home/yzu/coding/working/src/utils1.c
 
 CMakeFiles/ddamaris.dir/src/utils1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/src/utils1.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/src/utils1.c > CMakeFiles/ddamaris.dir/src/utils1.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/src/utils1.c > CMakeFiles/ddamaris.dir/src/utils1.c.i
 
 CMakeFiles/ddamaris.dir/src/utils1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/src/utils1.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/src/utils1.c -o CMakeFiles/ddamaris.dir/src/utils1.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/src/utils1.c -o CMakeFiles/ddamaris.dir/src/utils1.c.s
 
 CMakeFiles/ddamaris.dir/src/virtual_machine.c.o: CMakeFiles/ddamaris.dir/flags.make
 CMakeFiles/ddamaris.dir/src/virtual_machine.c.o: ../src/virtual_machine.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ddamaris.dir/src/virtual_machine.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/virtual_machine.c.o   -c /home/ctelma/Desktop/ddamaris/src/virtual_machine.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ddamaris.dir/src/virtual_machine.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddamaris.dir/src/virtual_machine.c.o   -c /home/yzu/coding/working/src/virtual_machine.c
 
 CMakeFiles/ddamaris.dir/src/virtual_machine.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddamaris.dir/src/virtual_machine.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ctelma/Desktop/ddamaris/src/virtual_machine.c > CMakeFiles/ddamaris.dir/src/virtual_machine.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yzu/coding/working/src/virtual_machine.c > CMakeFiles/ddamaris.dir/src/virtual_machine.c.i
 
 CMakeFiles/ddamaris.dir/src/virtual_machine.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddamaris.dir/src/virtual_machine.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ctelma/Desktop/ddamaris/src/virtual_machine.c -o CMakeFiles/ddamaris.dir/src/virtual_machine.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yzu/coding/working/src/virtual_machine.c -o CMakeFiles/ddamaris.dir/src/virtual_machine.c.s
 
 # Object files for target ddamaris
 ddamaris_OBJECTS = \
@@ -1220,7 +1220,7 @@ ddamaris: CMakeFiles/ddamaris.dir/src/utils1.c.o
 ddamaris: CMakeFiles/ddamaris.dir/src/virtual_machine.c.o
 ddamaris: CMakeFiles/ddamaris.dir/build.make
 ddamaris: CMakeFiles/ddamaris.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Linking C executable ddamaris"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yzu/coding/working/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Linking C executable ddamaris"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ddamaris.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1233,6 +1233,6 @@ CMakeFiles/ddamaris.dir/clean:
 .PHONY : CMakeFiles/ddamaris.dir/clean
 
 CMakeFiles/ddamaris.dir/depend:
-	cd /home/ctelma/Desktop/ddamaris/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ctelma/Desktop/ddamaris /home/ctelma/Desktop/ddamaris /home/ctelma/Desktop/ddamaris/cmake-build-debug /home/ctelma/Desktop/ddamaris/cmake-build-debug /home/ctelma/Desktop/ddamaris/cmake-build-debug/CMakeFiles/ddamaris.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yzu/coding/working/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yzu/coding/working /home/yzu/coding/working /home/yzu/coding/working/cmake-build-debug /home/yzu/coding/working/cmake-build-debug /home/yzu/coding/working/cmake-build-debug/CMakeFiles/ddamaris.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ddamaris.dir/depend
 
