@@ -12,7 +12,7 @@
 
 #include "vm.h"
 
-static void			init_cursor(t_player *player, t_cursor *cursor, int32_t pc)
+void			init_cursor(t_player *player, t_cursor *cursor, int32_t pc)
 {
 	int32_t		cursor_id;
 
