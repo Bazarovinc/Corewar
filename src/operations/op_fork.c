@@ -34,9 +34,7 @@ void				op_fork(t_vm *vm, t_cursor *cursor)
 
 	cursor->step += OP_CODE_LEN;
 	addr = get_op_arg(vm, cursor, 1, true);
-	new = duplicate_cursor(cursor, addr % IDX_MOD);
-	add_cursor_1(&(vm->cursors), new);
-	vm->cursors_num++;
+	duplicate_cursor(cursor, addr % IDX_MOD, vm);
 	/*if (vm->log & OP_LOG)
 		log_fork(cursor, addr);*/
 }

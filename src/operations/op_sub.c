@@ -33,7 +33,7 @@ void				op_sub(t_vm *vm, t_cursor *cursor)
 	r2_id = get_byte(vm, cursor->pc, cursor->step);
 	cursor->step += REG_LEN;
 	value = cursor->reg[INDEX(r1_id)] - cursor->reg[INDEX(r2_id)];
-	cursor->carry = (t_bool)(!value);
+	cursor->carry = !value;
 	r3_id = get_byte(vm, cursor->pc, cursor->step);
 	cursor->reg[INDEX(r3_id)] = value;
 	cursor->step += REG_LEN;

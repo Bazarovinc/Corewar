@@ -12,85 +12,84 @@
 
 #include "vm.h"
 
-int32_t		bytecode_to_int32(const uint8_t *arena, int32_t addr, int32_t size)
+int32_t		bytecode_to_int32(u_int8_t *arena, int32_t addr, int32_t size)
 {
-	int32_t		result;
-	t_bool		sign;
-	int			i;
+	int32_t	res;
+	int32_t	address;
+	char	sign;
+	int		i;
 
-	result = 0;
-	sign = (t_bool)(arena[calc_addr(addr)] & 0x80);
+	res = 0;
+	sign = (char)(arena[address_norming(addr)] & 0x80);
 	i = 0;
 	while (size)
 	{
+		address = address_norming(addr + size - 1);
 		if (sign)
-			result += ((arena[calc_addr(addr + size - 1)] ^ 0xFF) << (i++ * 8));
+			res += (arena[address] ^ 0xFF) << (i++ * 8);
 		else
-			result += arena[calc_addr(addr + size - 1)] << (i++ * 8);
+			res += arena[address] << (i++ * 8);
 		size--;
 	}
 	if (sign)
-		result = ~(result);
-	return (result);
+		res = ~(res);
+	return (res);
 }
 
-void		int32_to_bytecode(uint8_t *arena, int32_t addr, int32_t value,
+void		int32_to_bytecode(u_int8_t *arena, int32_t addr, int32_t value,
 						int32_t size)
 {
-	int8_t i;
+	int8_t	i;
+	int32_t	address;
 
 	i = 0;
 	while (size)
 	{
-		arena[calc_addr(addr + size - 1)] = (uint8_t)((value >> i) & 0xFF);
+		address = address_norming(addr + size - 1);
+		arena[address] = (u_int8_t)((value >> i) & 0xFF);
 		i += 8;
 		size--;
 	}
 }
 
-int32_t		get_op_arg(t_vm *vm, t_cursor *cursor, uint8_t index, t_bool mod)
+int32_t		get_op_arg(t_vm *vm, t_cursor *cursor, u_int8_t index, char mod)
 {
 	t_op		*op;
 	int32_t		value;
 	int32_t		addr;
 
-	op = &g_op[INDEX(cursor->op_code)];
+	op = &op_tab[cursor->op_code - 1];
 	value = 0;
-	if (cursor->args_types[INDEX(index)] & T_REG)
-		value = cursor->reg[INDEX(get_byte(vm, cursor->pc, cursor->step))];
-	else if (cursor->args_types[INDEX(index)] & T_DIR)
+	if (cursor->args_types[index - 1] == T_REG)
+		value = cursor->reg[get_byte(vm, cursor->pc, cursor->step) - 1];
+	else if (cursor->args_types[index - 1] == T_DIR)
 		value = bytecode_to_int32(vm->arena,
-								cursor->pc + cursor->step,
-								op->t_dir_size);
-	else if (cursor->args_types[INDEX(index)] & T_IND)
+					cursor->pc + cursor->step, op->t_dir_size);
+	else if (cursor->args_types[index - 1] == T_IND)
 	{
 		addr = bytecode_to_int32(vm->arena,
-								cursor->pc + cursor->step,
-								IND_SIZE);
+					cursor->pc + cursor->step, IND_SIZE);
 		value = bytecode_to_int32(vm->arena,
-							cursor->pc + (mod ? (addr % IDX_MOD) : addr),
-							DIR_SIZE);
+					cursor->pc + (mod ? (addr % IDX_MOD) : addr),	DIR_SIZE);
 	}
-	cursor->step += step_size(cursor->args_types[INDEX(index)], op);
+	cursor->step += step_over_arg(cursor->args_types[index - 1], op);
 	return (value);
 }
 
-t_cursor	*duplicate_cursor(t_cursor *cursor, int32_t addr)
+void	duplicate_cursor(t_cursor *cursor, int32_t addr, t_vm *vm)
 {
-	t_cursor	*new;
 	int			i;
 
-	addr = calc_addr(cursor->pc + addr);
-	new = init_cursor(cursor->player, addr);
+	addr = address_norming(cursor->pc + addr);
+	add_cursor(cursor->player, addr, vm);
 	i = 0;
 	while (i < REG_NUMBER)
 	{
-		new->reg[i] = cursor->reg[i];
+		vm->cursors->reg[i] = cursor->reg[i];
 		i++;
 	}
-	new->carry = cursor->carry;
-	new->last_live_cycle = cursor->last_live_cycle;
-	return (new);
+	vm->cursors->carry = cursor->carry;
+	vm->cursors->last_live_cycle = cursor->last_live_cycle;
 }
 
 /*void		update_map(t_vm *vm, t_cursor *cursor, int32_t addr, int32_t size)

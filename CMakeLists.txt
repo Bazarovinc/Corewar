@@ -1,17 +1,13 @@
 cmake_minimum_required(VERSION 3.16)
-project(working C)
+project(Corewar C)
 
 set(CMAKE_C_STANDARD 11)
 
-include_directories(.)
 include_directories(ft_printf)
 include_directories(includes)
-include_directories(libft)
 include_directories(libft/inc)
-include_directories(libft/src)
-include_directories(src)
 
-add_executable(working
+add_executable(Corewar
         ft_printf/ft_bzero.c
         ft_printf/ft_is_flag.c
         ft_printf/ft_printf.c
@@ -101,8 +97,7 @@ add_executable(working
         src/operations/op_sub.c
         src/operations/op_xor.c
         src/operations/op_zjmp.c
-        src/operations/utils.c
-        src/calculations.c
+        src/operations/op_utils.c
         src/check_to_die.c
         src/corewar.c
         src/init_game.c

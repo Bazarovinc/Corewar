@@ -31,7 +31,7 @@ void				op_xor(t_vm *vm, t_cursor *cursor)
 	value_1 = get_op_arg(vm, cursor, 1, true);
 	value_2 = get_op_arg(vm, cursor, 2, true);
 	value = value_1 ^ value_2;
-	cursor->carry = (t_bool)(!value);
+	cursor->carry = !value;
 	r_id = get_byte(vm, cursor->pc, cursor->step);
 	cursor->reg[INDEX(r_id)] = value;
 	cursor->step += REG_LEN;

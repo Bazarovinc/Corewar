@@ -30,7 +30,7 @@ void				op_zjmp(t_vm *vm, t_cursor *cursor)
 	{
 		//if (vm->vs)
 		//	clear_cursor(vm, cursor);
-		cursor->pc = calc_addr(cursor->pc + (addr % IDX_MOD));
+		cursor->pc = address_norming(cursor->pc + (addr % IDX_MOD));
 		//if (vm->vs)
 		//	draw_cursor(vm, cursor);
 		cursor->step = 0;

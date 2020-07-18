@@ -12,6 +12,14 @@
 
 #include "vm.h"
 
+static void		update_cursor(t_cursor *cursor)
+{
+	cursor->pc += cursor->step;
+	cursor->pc = address_norming(cursor->pc);
+	cursor->step = 0;
+	ft_bzero(cursor->args_types, 3);
+}
+
 static int		check_args(t_cursor *cursor, t_op *op, t_vm *vm)
 {
 	int32_t		i;
@@ -22,7 +30,7 @@ static int		check_args(t_cursor *cursor, t_op *op, t_vm *vm)
 	step = (op->args_types_code) ? 2 : 1;
 	while (i < op->args_num)
 	{
-		if (!(cursor->args_types[i] & op->args_types[i]))
+		if ((cursor->args_types[i] != op->args_types[i]))
 			return (0);
 		if (cursor->args_types[i] == T_REG)
 		{
@@ -30,7 +38,7 @@ static int		check_args(t_cursor *cursor, t_op *op, t_vm *vm)
 			if (reg < 1 || reg > REG_NUMBER)
 				return (0);
 		}
-		step += step_size(cursor->args_types[i], op);
+		step += step_over_arg(cursor->args_types[i], op);
 		i++;
 	}
 	return (1);
@@ -73,12 +81,10 @@ static void		do_operation(t_cursor *cursor, t_vm *vm)
 				op->func(vm, cursor);
 			else
 				cursor->step += calc_step(cursor, op);
-			if (vm->log & PC_MOVEMENT_LOG && cursor->step)
-				log_pc_movements(vm->arena, cursor);
 		}
 		else
 			cursor->step = 1;
-		move_cursor(vm, cursor);
+		update_cursor(cursor);
 	}
 }
 
@@ -90,7 +96,7 @@ void			run_vm(t_vm *vm)
 	{
 		if (vm->dump_fl == vm->cur_cycle)
 			print_dump(vm->arena);
-				cursor = vm->cursors;
+		cursor = vm->cursors;
 		while (cursor)
 		{
 			do_operation(cursor, vm);
@@ -98,7 +104,7 @@ void			run_vm(t_vm *vm)
 		}
 		if (vm->cycles_to_die == vm->cycles_after_check
 			|| vm->cycles_to_die <= 0)
-			check_cursor_to_die(vm);
+			check_and_delete(vm);
 		vm->cur_cycle++;
 		vm->cycles_after_check++;
 	}
