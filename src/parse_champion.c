@@ -12,7 +12,7 @@
 
 #include "vm.h"
 
-unsigned char	*read_str(int fd, size_t len)
+unsigned char	*read_str(int fd, size_t len, t_vm *vm)
 {
 	size_t			size;
 	unsigned char	*tmp;
@@ -22,54 +22,54 @@ unsigned char	*read_str(int fd, size_t len)
 	if (size == -1)
 	{
 		free (tmp);
-		print_error("ERROR: Can't open champion file");
+		print_error("ERROR: Can't open champion file", vm);
 	}
 	if (size < len)
 	{
 		free(tmp);
-		print_error("ERROR: Invalid champion file");
+		print_error("ERROR: Invalid champion file", vm);
 	}
 	return (tmp);
 }
 
-static void		check_zero(int fd)
+static void		check_zero(int fd, t_vm *vm)
 {
 	char		*str;
 
-	str = read_str(fd, 4);
+	str = read_str(fd, 4, vm);
 	if (!(str[0] == 0 && str[1] == 0 && str[2] == 0 && str[3] == 0))
 	{
 		free(str);
-		print_error("ERROR: No null control bytes");
+		print_error("ERROR: No null control bytes", vm);
 	}
 }
-static int 			parse_code_size(int fd)
+static int 			parse_code_size(int fd, t_vm *vm)
 {
 	unsigned char	*str;
 	int32_t			res;
 
 	res = 0;
-	str = read_str(fd, 4);
+	str = read_str(fd, 4, vm);
 	res = str[3] + str[2] * 256 + str[1] * 65536 + str[0] * 16777216;
 	if (res > CHAMP_MAX_SIZE)
-		print_error("ERROR: Invalid code size");
+		print_error("ERROR: Invalid code size", vm);
 	return (res);
 }
 
-void				parse_champion(int fd, t_player *player)
+void				parse_champion(int fd, t_player *player, t_vm *vm)
 {
 	unsigned char	*str;
 
-	str = read_str(fd, 4);
+	str = read_str(fd, 4, vm);
 	if (!(str[0] == 0 && str[1] == 234 && str[2] == 131 && str[3] == 243))
 	{
 		free(str);
-		print_error("ERROR: Invalid magic header");
+		print_error("ERROR: Invalid magic header", vm);
 	}
-	player->name = read_str(fd, PROG_NAME_LENGTH);
-	check_zero(fd);
-	player->code_size = parse_code_size(fd);
-	player->comment = read_str(fd, COMMENT_LENGTH);
-	check_zero(fd);
-	player->code = read_str(fd, player->code_size);
+	player->name = read_str(fd, PROG_NAME_LENGTH, vm);
+	check_zero(fd, vm);
+	player->code_size = parse_code_size(fd, vm);
+	player->comment = read_str(fd, COMMENT_LENGTH, vm);
+	check_zero(fd, vm);
+	player->code = read_str(fd, player->code_size, vm);
 }

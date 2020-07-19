@@ -12,12 +12,12 @@
 
 #include "vm.h"
 
-static t_player	*init_player(void)
+static t_player	*init_player(t_vm  *vm)
 {
 	t_player	*player;
 
 	if (!(player = (t_player *)ft_memalloc(sizeof(t_player))))
-		print_error("ERROR: Memory allocation error");
+		print_error("ERROR: Memory allocation error", vm);
 	player->id = 0;
 	player->name = NULL;
 	player->comment = NULL;
@@ -49,10 +49,10 @@ void		*add_player(char *filename, int id, t_vm *vm)
 	int			fd;
 
 	if ((fd = open(filename, O_RDONLY)) < 0)
-		print_error("ERROR: Can't open file with champion");
-	player = init_player();
+		print_error("ERROR: Can't open file with champion", vm);
+	player = init_player(vm);
 	player->id = id;
-	parse_champion(fd, player);
+	parse_champion(fd, player, vm);
 	if (id)
 	{
 		if (!vm->players[id - 1])

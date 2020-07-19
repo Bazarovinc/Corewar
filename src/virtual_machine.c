@@ -95,7 +95,7 @@ void			run_vm(t_vm *vm)
 	while (vm->cursors_num)
 	{
 		if (vm->dump_fl == vm->cur_cycle)
-			print_dump(vm->arena);
+			print_dump(vm->arena, vm);
 		cursor = vm->cursors;
 		while (cursor)
 		{

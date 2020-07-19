@@ -16,8 +16,9 @@ t_vm		*init_vm(void)
 {
 	t_vm *vm;
 
+	vm = NULL;
 	if (!(vm = (t_vm *)malloc(sizeof(t_vm))))
-		print_error("ERROR: Memory allocation error");
+		print_error("ERROR: Memory allocation error", vm);
 	vm->players_num = 0;
 	vm->last_alive = NULL;
 	vm->cursors = NULL;
@@ -50,6 +51,6 @@ int			main(int argc, char **argv)
 		free_vm(vm);
 	}
 	else
-		print_usage();
+		print_usage(vm);
 	return (0);
 }

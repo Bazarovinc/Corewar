@@ -29,7 +29,7 @@ void			print_introducing(t_vm *vm)
 	}
 }
 
-void			print_dump(u_int8_t *arena)
+void			print_dump(u_int8_t *arena, t_vm *vm)
 {
 	int			i;
 	int			j;
@@ -47,7 +47,7 @@ void			print_dump(u_int8_t *arena)
 		ft_printf("\n");
 		i += 32;
 	}
-	print_error("Aborting execution");
+	print_error("Aborting execution", vm);
 }
 
 void		print_winner(t_vm *vm)
@@ -56,15 +56,17 @@ void		print_winner(t_vm *vm)
 	vm->last_alive->id, vm->last_alive->name);
 }
 
-void		print_usage(void)
+void		print_usage(t_vm *vm)
 {
 	ft_printf("Usage: ./corewar [ -dump <int num> ] "
 			  "[-n <int num>] <champion.cor> <...>\n");
+	free_vm(vm);
 	exit(0);
 }
 
-void		print_error(char *error)
+void		print_error(char *error, t_vm *vm)
 {
 	ft_printf("%s\n", error);
+	free_vm(vm);
 	exit(0);
 }

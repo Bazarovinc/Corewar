@@ -20,7 +20,7 @@ static void	parse_dump_flag(char **argv, t_vm *vm)
 	if ((num = ft_strtoint(*argv + 1)) >= 0)
 		vm->dump_fl = num;
 	else
-		print_error("ERROR: Wrong argument for -dump");
+		print_error("ERROR: Wrong argument for -dump", vm);
 }
 
 static int		parse_n_flag(char **argv, t_vm *vm)
@@ -34,7 +34,7 @@ static int		parse_n_flag(char **argv, t_vm *vm)
 			add_player(*(argv + 1), id, vm);
 	}
 	else
-		print_error("ERROR: Wrong argument for -n");
+		print_error("ERROR: Wrong argument for -n", vm);
 	return (1);
 }
 
@@ -53,10 +53,12 @@ void 	parser(t_vm *vm, char **argv)
 //			parse_aff(parser, vm);
 		else if (!ft_strcmp(*argv, "-stat"))
 			vm->stat_fl = 1;
+		else if (!ft_strcmp(*argv, "-alive"))
+			vm->alive_fl = 1;
 		else if (file_is_cor(*argv))
 			add_player(*argv, 0, vm);
 		argv++;
 	}
 	if (vm->players_num > MAX_PLAYERS || vm->players_num == 0)
-		print_error("ERROR: Wrong number of champions");
+		print_error("ERROR: Wrong number of champions", vm);
 }

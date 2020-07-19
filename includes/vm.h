@@ -89,6 +89,7 @@ typedef struct			s_vm
 	size_t				checks_num;
 	int 				vis_fl;
 	int 				stat_fl;
+	int 				alive_fl;
 	size_t 				dump_fl;
 	int					aff_fl;
 }						t_vm;
@@ -108,14 +109,14 @@ typedef struct			s_op
 
 
 void					print_introducing(t_vm *vm);
-void					print_usage(void);
-void					print_error(char *error);
-void					print_dump(u_int8_t *arena);
+void					print_usage(t_vm *vm);
+void					print_error(char *error, t_vm *vm);
+void					print_dump(u_int8_t *arena, t_vm *vm);
 int						file_is_cor(char *str);
 void					parser(t_vm *vm, char **argv);
 int						ft_strtoint(char *str);
-void					parse_champion(int fd, t_player *player);
-unsigned char			*read_str(int fd, size_t len);
+void					parse_champion(int fd, t_player *player, t_vm *vm);
+unsigned char			*read_str(int fd, size_t len, t_vm *vm);
 void					*add_player(char *filename, int id, t_vm *vm);
 void					init_cursors(t_vm *vm);
 void					init_arena(t_vm *vm);
