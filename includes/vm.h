@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/05 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/17 22:01:04 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/19 17:08:28 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -156,6 +156,7 @@ void					op_sti(t_vm *vm, t_cursor *cursor);
 void					op_sub(t_vm *vm, t_cursor *cursor);
 void					op_xor(t_vm *vm, t_cursor *cursor);
 void					op_zjmp(t_vm *vm, t_cursor *cursor);
+void					free_vm(t_vm *vm);
 
 static t_op				op_tab[16] = {
 		{
