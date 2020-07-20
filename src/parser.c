@@ -12,6 +12,28 @@
 
 #include "../includes/vm.h"
 
+void		colorise_players(t_vm *vm)
+{
+	int		i;
+
+	i = 0;
+	while (i < MAX_PLAYERS)
+	{
+		if (vm->players[i])
+		{
+			if (i == 0)
+				vm->players[i]->color = CYAN;
+			if (i == 1)
+				vm->players[i]->color = GREEN;
+			if (i == 2)
+				vm->players[i]->color = WHITE;
+			if (i == 3)
+				vm->players[i]->color = MAG;
+		}
+		i++;
+	}
+}
+
 static void	parse_dump_flag(char **argv, t_vm *vm)
 {
 	int	num;
@@ -49,8 +71,8 @@ void 	parser(t_vm *vm, char **argv)
 			argv++;
 		else if (!ft_strcmp(*argv, "-visu"))
 			vm->vis_fl = 1;
-//		else if (!ft_strcmp(*argv, "-aff"))
-//			parse_aff(parser, vm);
+		else if (!ft_strcmp(*argv, "-aff"))
+			vm->aff_fl = 1;
 		else if (!ft_strcmp(*argv, "-stat"))
 			vm->stat_fl = 1;
 		else if (!ft_strcmp(*argv, "-alive"))
@@ -61,4 +83,5 @@ void 	parser(t_vm *vm, char **argv)
 	}
 	if (vm->players_num > MAX_PLAYERS || vm->players_num == 0)
 		print_error("ERROR: Wrong number of champions", vm);
+	colorise_players(vm);
 }

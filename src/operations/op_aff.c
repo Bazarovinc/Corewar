@@ -12,6 +12,15 @@
 
 #include "vm.h"
 
+static void	print_aff(t_cursor *cursor, char value)
+{
+	ft_printf("%s", cursor->player->color);
+	ft_printf("cursor of %10s executes operation: ", cursor->player->name);
+	ft_printf("aff %c\n", value);
+	ft_printf("%s", NC);
+}
+
+
 void	op_aff(t_vm *vm, t_cursor *cursor)
 {
     int32_t	r_id;
@@ -23,6 +32,8 @@ void	op_aff(t_vm *vm, t_cursor *cursor)
     cursor->step += REG_LEN;
     if (vm->aff_fl || vm->stat_fl)
         ft_printf("Aff: %c\n", (char)value);
+    if (vm->stat_fl)
+    	print_aff(cursor, (char)value);
 /*	if (vm->vs)
     {
         vm->vs->aff_symbol = (char)value;

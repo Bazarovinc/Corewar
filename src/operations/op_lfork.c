@@ -14,8 +14,10 @@
 
 static void	print_lfork(t_cursor *cursor, int32_t addr)
 {
+	ft_printf("%s", cursor->player->color);
 	ft_printf("cursor of %10s executes operation: ", cursor->player->name);
 	ft_printf("lfork %d (%d)\n", addr, cursor->pc + addr);
+	ft_printf("%s", NC);
 }
 
 void				op_lfork(t_vm *vm, t_cursor *cursor)

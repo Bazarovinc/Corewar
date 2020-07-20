@@ -12,6 +12,27 @@
 
 #include "vm.h"
 
+static void		print_cycle_to_die(t_vm *vm)
+{
+	ft_printf("%s", YELLOW);
+	if (vm->checks_num == MAX_CHECKS)
+	{
+		ft_printf("Cycle_to_die reduced to %d because number of checks ",
+			vm->cycles_to_die);
+		ft_printf("(%d) reached MAX_CHECKS(%d)\n", vm->checks_num, MAX_CHECKS);
+	}
+	if (vm->lives_num >= NBR_LIVE)
+	{
+		ft_printf("Cycle_to_die reduced to %d because number of lives ",
+				  vm->cycles_to_die);
+		ft_printf("(%d) exceed NBR_LIVE(%d)\n", vm->lives_num, NBR_LIVE);
+	}
+//	ft_printf("Press Enter\n");
+//	while (getchar() != '\n')
+//		;
+}
+
+
 static void		reset_lives_nums(t_vm *vm)
 {
 	int32_t		i;
@@ -43,6 +64,9 @@ static void		delete_cursor(t_cursor *cursor, t_vm *vm)
 		if (prev)
 			prev->next = cursor->next;
 	}
+	if (vm->stat_fl)
+		ft_printf("%sCursor of %s is dead%s\n", cursor->player->color,
+				cursor->player->name, NC);
 	free(cursor);
 	cursor = NULL;
 	vm->cursors_num--;
@@ -65,6 +89,7 @@ void			check_and_delete(t_vm *vm)
 	if (vm->checks_num == MAX_CHECKS || vm->lives_num >= NBR_LIVE)
 	{
 		vm->cycles_to_die -= CYCLE_DELTA;
+		print_cycle_to_die(vm);
 		vm->checks_num = 0;
 	}
 	reset_lives_nums(vm);

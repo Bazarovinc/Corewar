@@ -14,8 +14,10 @@
 
 static void	print_zjmp(t_cursor *cursor, int32_t addr)
 {
+	ft_printf("%s", cursor->player->color);
 	ft_printf("cursor of %10s executes operation: ", cursor->player->name);
 	ft_printf("zjmp %d %s\n", addr, (cursor->carry) ? "OK" : "FAILED");
+	ft_printf("%s", NC);
 }
 
 void				op_zjmp(t_vm *vm, t_cursor *cursor)

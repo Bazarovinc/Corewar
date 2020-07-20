@@ -14,8 +14,10 @@
 
 static void	print_st(t_cursor *cursor, int32_t r_id, int32_t addr)
 {
+	ft_printf("%s", cursor->player->color);
 	ft_printf("cursor of %10s executes operation: ", cursor->player->name);
 	ft_printf("st r%d %d\n", r_id, addr);
+	ft_printf("%s", NC);
 }
 /*
 inline static void	vs_st(t_vm *vm, t_cursor *cursor, int32_t addr)

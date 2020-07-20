@@ -15,8 +15,10 @@
 
 static void	print_fork(t_cursor *cursor, int32_t addr)
 {
+	ft_printf("%s", cursor->player->color);
 	ft_printf("cursor of %10s executes operation: fork ", cursor->player->name);
 	ft_printf("%d (%d)\n", addr,	cursor->pc + addr % IDX_MOD);
+	ft_printf("%s", NC);
 }
 
 void				op_fork(t_vm *vm, t_cursor *cursor)

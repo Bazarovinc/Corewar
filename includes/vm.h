@@ -40,6 +40,7 @@ typedef enum
 	False
 }	t_bool;
 */
+
 typedef struct			s_player
 {
 	int					id;
@@ -47,6 +48,7 @@ typedef struct			s_player
 	unsigned char		*comment;
 	size_t				code_size;
 	unsigned char		*code;
+	char				*color;
 	size_t				last_live_cycle;
 	size_t				curr_lives_num;
 	size_t				prev_lives_num;
@@ -112,6 +114,7 @@ void					print_introducing(t_vm *vm);
 void					print_usage(t_vm *vm);
 void					print_error(char *error, t_vm *vm);
 void					print_dump(u_int8_t *arena, t_vm *vm);
+void					print_winner(t_vm *vm);
 int						file_is_cor(char *str);
 void					parser(t_vm *vm, char **argv);
 int						ft_strtoint(char *str);
