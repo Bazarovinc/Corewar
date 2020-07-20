@@ -57,6 +57,7 @@ void			init_cursors(t_vm *vm)
 			add_cursor(vm->players[i], vm->players[i]->pc, vm);
 		i--;
 	}
+	vm->last_alive = vm->cursors->player;
 }
 
 void			init_arena(t_vm *vm)
