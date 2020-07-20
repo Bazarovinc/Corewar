@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 22:09:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/17 21:55:08 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/20 15:45:24 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void			add_cursor(t_player *player, int32_t pc, t_vm *vm)
 
 	cursor = NULL;
 	if (!(cursor = (t_cursor *)malloc(sizeof(t_cursor))))
-		print_error("ERROR: Memory allocation error", vm);
+		error_func("r-", "ERROR: Memory allocation error");
 	init_cursor(player, cursor, 0);
 	if (!vm->cursors)
 		vm->cursors = cursor;

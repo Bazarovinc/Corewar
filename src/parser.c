@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/08 14:32:43 by ddamaris         ###   ########.fr       */
+/*   Updated: 2020/07/20 15:54:17 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static void	parse_dump_flag(char **argv, t_vm *vm)
 	if ((num = ft_strtoint(*argv + 1)) >= 0)
 		vm->dump_fl = num;
 	else
-		print_error("ERROR: Wrong argument for -dump", vm);
+		error_func("r-", "ERROR: Wrong argument for -dump");
 }
 
 static int		parse_n_flag(char **argv, t_vm *vm)
@@ -34,7 +34,7 @@ static int		parse_n_flag(char **argv, t_vm *vm)
 			add_player(*(argv + 1), id, vm);
 	}
 	else
-		print_error("ERROR: Wrong argument for -n", vm);
+		error_func("r-", "ERROR: Wrong argument for -n");
 	return (1);
 }
 
@@ -60,5 +60,5 @@ void 	parser(t_vm *vm, char **argv)
 		argv++;
 	}
 	if (vm->players_num > MAX_PLAYERS || vm->players_num == 0)
-		print_error("ERROR: Wrong number of champions", vm);
+		error_func("r-", "ERROR: Wrong number of champions");
 }

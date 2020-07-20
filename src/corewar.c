@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/05 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/19 17:08:28 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/20 15:45:24 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_vm		*init_vm(void)
 
 	vm = NULL;
 	if (!(vm = (t_vm *)malloc(sizeof(t_vm))))
-		print_error("ERROR: Memory allocation error", vm);
+		error_func("r-", "ERROR: Memory allocation error");
 	vm->players_num = 0;
 	vm->last_alive = NULL;
 	vm->cursors = NULL;

@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/05 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/19 17:08:28 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/20 15:55:43 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,7 @@ typedef struct			s_op
 
 void					print_introducing(t_vm *vm);
 void					print_usage(t_vm *vm);
-void					print_error(char *error, t_vm *vm);
+//void					print_error(char *error, t_vm *vm);
 void					print_dump(u_int8_t *arena, t_vm *vm);
 int						file_is_cor(char *str);
 void					parser(t_vm *vm, char **argv);
@@ -140,7 +140,7 @@ void					int32_to_bytecode(u_int8_t *arena, int32_t addr,
 int32_t                 get_op_arg(t_vm *vm, t_cursor *cursor,
 							u_int8_t index, char mod);
 void					duplicate_cursor(t_cursor *cursor, int32_t addr,
-							t_vm *vm);
+											t_vm *vm);
 void					op_live(t_vm *vm, t_cursor *cursor);
 void                    op_add(t_vm *vm, t_cursor *cursor);
 void                    op_aff(t_vm *vm, t_cursor *cursor);
@@ -158,6 +158,7 @@ void					op_sub(t_vm *vm, t_cursor *cursor);
 void					op_xor(t_vm *vm, t_cursor *cursor);
 void					op_zjmp(t_vm *vm, t_cursor *cursor);
 void					free_vm(t_vm *vm);
+void					error_func(char *clr, char *str);
 
 static t_op				op_tab[16] = {
 		{

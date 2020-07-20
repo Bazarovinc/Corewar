@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   op_fork.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
+/*   By: vbrazhni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/18 21:22:45 by ctelma            #+#    #+#             */
-/*   Updated: 2020/07/18 21:22:45 by ctelma           ###   ########.fr       */
+/*   Created: 2018/11/12 17:49:17 by ablizniu          #+#    #+#             */
+/*   Updated: 2020/07/20 15:56:41 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "vm.h"
 
@@ -21,21 +20,23 @@
 										cursor->pc + addr % IDX_MOD);
 }*/
 
-void	add_cursor_1(t_cursor **list, t_cursor *new)
+/*void	add_cursor_1(t_cursor **list, t_cursor *new)
 {
     if (new)
         new->next = *list;
     *list = new;
-}
+}*/
 
 void				op_fork(t_vm *vm, t_cursor *cursor)
 {
 	int32_t		addr;
-	t_cursor	*new;
+	//t_cursor	*new;
 
 	cursor->step += OP_CODE_LEN;
 	addr = get_op_arg(vm, cursor, 1, true);
 	duplicate_cursor(cursor, addr % IDX_MOD, vm);
+	//add_cursor_1(&(vm->cursors), new);
+	vm->cursors_num++;
 	/*if (vm->log & OP_LOG)
 		log_fork(cursor, addr);*/
 }
