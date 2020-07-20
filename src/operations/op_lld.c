@@ -12,10 +12,11 @@
 
 #include "vm.h"
 
-/*inline static void	log_lld(uint32_t cursor_id, int32_t value, int32_t r_id)
+static void	print_lld(t_cursor *cursor, int32_t value, int32_t r_id)
 {
-	ft_printf("P %4d | lld %d r%d\n", cursor_id, value, r_id);
-}*/
+	ft_printf("cursor of %10s executes operation: ", cursor->player->name);
+	ft_printf("lld %d r%d\n", value, r_id);
+}
 
 void				op_lld(t_vm *vm, t_cursor *cursor)
 {
@@ -26,8 +27,8 @@ void				op_lld(t_vm *vm, t_cursor *cursor)
 	value = get_op_arg(vm, cursor, 1, false);
 	cursor->carry = !value;
 	r_id = get_byte(vm, cursor->pc, cursor->step);
-	cursor->reg[INDEX(r_id)] = value;
+	cursor->reg[r_id - 1] = value;
 	cursor->step += REG_LEN;
-	/*if (vm->log & OP_LOG)
-		log_lld(cursor->id, value, r_id);*/
+	if (vm->stat_fl)
+		print_lld(cursor, value, r_id);
 }
