@@ -79,6 +79,9 @@ void			check_and_delete(t_vm *vm)
 
 	vm->checks_num++;
 	cursor = vm->cursors;
+	if (vm->cycles_to_die <= 0)
+		ft_printf("%sCycle to die = %d, All champions must die%s", RED,
+				vm->cycles_to_die, NC);
 	while (cursor)
 	{
 		if (vm->cycles_to_die <= 0 ||
