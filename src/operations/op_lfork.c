@@ -22,7 +22,7 @@ void				op_lfork(t_vm *vm, t_cursor *cursor)
 	int32_t		addr;
 	t_cursor	*new;
 
-	cursor->step += OP_CODE_LEN;
+	cursor->step += 1;
 	addr = get_op_arg(vm, cursor, 1, true);
 	duplicate_cursor(cursor, addr % IDX_MOD, vm);
 /*	if (vm->log & OP_LOG)

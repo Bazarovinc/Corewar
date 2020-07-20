@@ -6,7 +6,7 @@
 /*   By: vbrazhni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 17:49:17 by ablizniu          #+#    #+#             */
-/*   Updated: 2020/07/20 15:56:41 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/20 16:18:45 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void				op_fork(t_vm *vm, t_cursor *cursor)
 	int32_t		addr;
 	//t_cursor	*new;
 
-	cursor->step += OP_CODE_LEN;
+	cursor->step += 1;
 	addr = get_op_arg(vm, cursor, 1, true);
 	duplicate_cursor(cursor, addr % IDX_MOD, vm);
 	//add_cursor_1(&(vm->cursors), new);

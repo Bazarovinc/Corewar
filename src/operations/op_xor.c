@@ -27,14 +27,14 @@ void				op_xor(t_vm *vm, t_cursor *cursor)
 	int32_t	value;
 	int32_t	r_id;
 
-	cursor->step += OP_CODE_LEN + ARGS_CODE_LEN;
+	cursor->step += 2;
 	value_1 = get_op_arg(vm, cursor, 1, true);
 	value_2 = get_op_arg(vm, cursor, 2, true);
 	value = value_1 ^ value_2;
 	cursor->carry = !value;
 	r_id = get_byte(vm, cursor->pc, cursor->step);
-	cursor->reg[INDEX(r_id)] = value;
-	cursor->step += REG_LEN;
+	cursor->reg[r_id - 1] = value;
+	cursor->step += 1;
 	/*if (vm->log & OP_LOG)
 		log_xor(cursor->id, value_1, value_2, r_id);*/
 }

@@ -22,12 +22,12 @@ void				op_ld(t_vm *vm, t_cursor *cursor)
 	int32_t	value;
 	int32_t	r_id;
 
-	cursor->step += (OP_CODE_LEN + ARGS_CODE_LEN);
+	cursor->step += 2;
 	value = get_op_arg(vm, cursor, 1, true);
 	cursor->carry = !value;
 	r_id = get_byte(vm, cursor->pc, cursor->step);
-	cursor->reg[INDEX(r_id)] = value;
-	cursor->step += REG_LEN;
+	cursor->reg[r_id - 1] = value;
+	cursor->step += 1;
 	/*if (vm->log & OP_LOG)
 		log_ld(cursor->id, value, r_id);*/
 }

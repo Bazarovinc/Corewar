@@ -29,14 +29,14 @@ void				op_live(t_vm *vm, t_cursor *cursor)
 	int32_t		player_id;
 	t_player	*player;
 
-	cursor->step += OP_CODE_LEN;
+	cursor->step += 1;
 	player_id = get_op_arg(vm, cursor, 1, false);
 	vm->lives_num++;
 	cursor->last_live_cycle = vm->cur_cycle;
 	player = NULL;
 	if (player_id <= -1 && player_id >= -((int32_t)vm->players_num))
 	{
-		player = vm->players[INDEX(FT_ABS(player_id))];
+		player = vm->players[FT_ABS(player_id) - 1];
 		player->last_live_cycle = vm->cur_cycle;
 		player->curr_lives_num++;
 		vm->last_alive = player;

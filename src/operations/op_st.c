@@ -29,15 +29,15 @@ void				op_st(t_vm *vm, t_cursor *cursor)
 	int32_t	r_value;
 	int32_t	addr;
 
-	cursor->step += (OP_CODE_LEN + ARGS_CODE_LEN);
+	cursor->step += 2;
 	r_id = get_byte(vm, cursor->pc, cursor->step);
-	r_value = cursor->reg[INDEX(r_id)];
-	cursor->step += REG_LEN;
+	r_value = cursor->reg[r_id - 1];
+	cursor->step += 1;
 	if (cursor->args_types[1] == T_REG)
 	{
 		addr = get_byte(vm, cursor->pc, cursor->step);
-		cursor->reg[INDEX(addr)] = r_value;
-		cursor->step += REG_LEN;
+		cursor->reg[addr - 1] = r_value;
+		cursor->step += 1;
 	}
 	else
 	{
