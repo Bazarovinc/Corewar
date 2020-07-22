@@ -22,12 +22,12 @@ unsigned char	*read_str(int fd, size_t len, t_vm *vm)
 	if (size == -1)
 	{
 		free (tmp);
-		error_func("r-", "ERROR: Can't open champion file");
+		error_func("r-", "ERROR: Can't open champion file", vm);
 	}
 	if (size < len)
 	{
 		free(tmp);
-		error_func("r-", "ERROR: Invalid champion file");
+		error_func("r-", "ERROR: Invalid champion file", vm);
 	}
 	return (tmp);
 }
@@ -40,7 +40,7 @@ static void		check_zero(int fd, t_vm *vm)
 	if (!(str[0] == 0 && str[1] == 0 && str[2] == 0 && str[3] == 0))
 	{
 		free(str);
-		error_func("r-", "ERROR: No null control bytes");
+		error_func("r-", "ERROR: No null control bytes", vm);
 	}
 }
 static int 			parse_code_size(int fd, t_vm *vm)
@@ -52,7 +52,7 @@ static int 			parse_code_size(int fd, t_vm *vm)
 	str = read_str(fd, 4, vm);
 	res = str[3] + str[2] * 256 + str[1] * 65536 + str[0] * 16777216;
 	if (res > CHAMP_MAX_SIZE)
-		error_func("r-", "ERROR: Invalid code size");
+		error_func("r-", "ERROR: Invalid code size", vm);
 	return (res);
 }
 
@@ -64,7 +64,7 @@ void				parse_champion(int fd, t_player *player, t_vm *vm)
 	if (!(str[0] == 0 && str[1] == 234 && str[2] == 131 && str[3] == 243))
 	{
 		free(str);
-		error_func("r-", "ERROR: Invalid magic header");
+		error_func("r-", "ERROR: Invalid magic header", vm);
 	}
 	player->name = read_str(fd, PROG_NAME_LENGTH, vm);
 	check_zero(fd, vm);

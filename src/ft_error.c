@@ -76,7 +76,7 @@ static int	colour_check(char *str)
 	return (0);
 }
 
-void		error_func(char *clr, char *str)
+void		error_func(char *clr, char *str, t_vm *vm)
 {
 	size_t len;
 
@@ -86,5 +86,6 @@ void		error_func(char *clr, char *str)
 	write(2, str, len);
 	write(2, "\033[0m", 5);
 	write(2, "\n", 1);
+	free_vm(vm);
 	exit(1);
 }
