@@ -13,13 +13,14 @@
 
 #include "vm.h"
 
-/*inline static void	log_and(uint32_t cursor_id,
-							int32_t value_1,
-							int32_t value_2,
-							int32_t r_id)
+static void	print_and(t_cursor *cursor, int32_t v1, int32_t v2,
+						int32_t r_id)
 {
-	ft_printf("P %4d | and %d %d r%d\n", cursor_id, value_1, value_2, r_id);
-}*/
+	ft_printf("%s", cursor->player->color);
+	ft_printf("cursor of %10s executes operation: and ", cursor->player->name);
+	ft_printf("%d %d r%d\n", v1, v2, r_id);
+	ft_printf("%s", NC);
+}
 
 void				op_and(t_vm *vm, t_cursor *cursor)
 {
@@ -35,7 +36,7 @@ void				op_and(t_vm *vm, t_cursor *cursor)
 	cursor->carry = !value;
 	r_id = get_byte(vm, cursor->pc, cursor->step);
 	cursor->reg[r_id - 1] = value;
-	cursor->step += 1;
-	/*if (vm->log & OP_LOG)
-		log_and(cursor->id, value_1, value_2, r_id);*/
+	cursor->step += REG_LEN;
+	if (vm->stat_fl)
+		print_and(cursor, value_1, value_2, r_id);
 }

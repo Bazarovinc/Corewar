@@ -12,10 +12,13 @@
 
 #include "vm.h"
 
-/*inline static void	log_lfork(t_cursor *cursor, int32_t addr)
+static void	print_lfork(t_cursor *cursor, int32_t addr)
 {
-	ft_printf("P %4d | lfork %d (%d)\n", cursor->id, addr, cursor->pc + addr);
-}*/
+	ft_printf("%s", cursor->player->color);
+	ft_printf("cursor of %10s executes operation: ", cursor->player->name);
+	ft_printf("lfork %d (%d)\n", addr, cursor->pc + addr);
+	ft_printf("%s", NC);
+}
 
 void				op_lfork(t_vm *vm, t_cursor *cursor)
 {
@@ -25,6 +28,6 @@ void				op_lfork(t_vm *vm, t_cursor *cursor)
 	cursor->step += 1;
 	addr = get_op_arg(vm, cursor, 1, true);
 	duplicate_cursor(cursor, addr % IDX_MOD, vm);
-/*	if (vm->log & OP_LOG)
-		log_lfork(cursor, addr);*/
+	if (vm->stat_fl)
+		print_lfork(cursor, addr);
 }

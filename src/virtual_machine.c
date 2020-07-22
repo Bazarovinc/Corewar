@@ -30,7 +30,7 @@ static int		check_args(t_cursor *cursor, t_op *op, t_vm *vm)
 	step = (op->args_types_code) ? 2 : 1;
 	while (i < op->args_num)
 	{
-		if ((cursor->args_types[i] != op->args_types[i]))
+		if (!(cursor->args_types[i] & op->args_types[i]))
 			return (0);
 		if (cursor->args_types[i] == T_REG)
 		{

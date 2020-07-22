@@ -23,10 +23,12 @@ void			print_introducing(t_vm *vm)
 	{
 		player = vm->players[i];
 		if (player)
-			ft_printf("* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
-				player->id, player->code_size, player->name, player->comment);
+			ft_printf("%s* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
+				player->color, player->id, player->code_size,
+				player->name, player->comment);
 		i++;
 	}
+	ft_printf("%s", NC);
 }
 
 void			print_dump(u_int8_t *arena, t_vm *vm)
@@ -52,8 +54,9 @@ void			print_dump(u_int8_t *arena, t_vm *vm)
 
 void		print_winner(t_vm *vm)
 {
-	ft_printf("Contestant %d, \"%s\", has won !\n", \
-	vm->last_alive->id, vm->last_alive->name);
+	if (vm->last_alive)
+		ft_printf("Contestant %d, \"%s\", has won !\n",
+				vm->last_alive->id, vm->last_alive->name);
 }
 
 void		print_usage(t_vm *vm)
