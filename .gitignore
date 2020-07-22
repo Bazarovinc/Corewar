@@ -1,7 +1,7 @@
 cmake-build-debug/*
 bin/
 obj/
-
+CMakeLists.txt
 # GraphViz files
 *.gv
 *.svg
