@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/20 19:15:32 by ctelma            #+#    #+#             */
-/*   Updated: 2020/07/20 19:15:32 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/22 20:58:52 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ typedef struct			s_player
 	int					id;
 	unsigned char		*name;
 	unsigned char		*comment;
+	char				*color;
 	size_t				code_size;
 	unsigned char		*code;
 	size_t				last_live_cycle;
@@ -113,6 +114,7 @@ void					print_introducing(t_vm *vm);
 void					print_usage(t_vm *vm);
 //void					print_error(char *error, t_vm *vm);
 void					print_dump(u_int8_t *arena, t_vm *vm);
+void					print_winner(t_vm *vm);
 int						file_is_cor(char *str);
 void					parser(t_vm *vm, char **argv);
 int						ft_strtoint(char *str);
@@ -130,6 +132,8 @@ int32_t					calc_step(t_cursor *cursor, t_op *op);
 int32_t					address_norming(int32_t addr);
 void					check_and_delete(t_vm *vm);
 int8_t					get_byte(t_vm *vm, int32_t pc, int32_t step);
+void					free_vm(t_vm *vm);
+void					error_func(char *clr, char *str);
 
 /*
 ** Operations
@@ -158,8 +162,6 @@ void					op_sti(t_vm *vm, t_cursor *cursor);
 void					op_sub(t_vm *vm, t_cursor *cursor);
 void					op_xor(t_vm *vm, t_cursor *cursor);
 void					op_zjmp(t_vm *vm, t_cursor *cursor);
-void					free_vm(t_vm *vm);
-void					error_func(char *clr, char *str);
 
 static t_op				op_tab[16] = {
 		{

@@ -6,11 +6,33 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/20 15:54:17 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/22 20:39:16 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/vm.h"
+
+void		colorise_players(t_vm *vm)
+{
+	int		i;
+
+	i = 0;
+	while (i < MAX_PLAYERS)
+	{
+		if (vm->players[i])
+		{
+			if (i == 0)
+				vm->players[i]->color = CYAN;
+			if (i == 1)
+				vm->players[i]->color = GREEN;
+			if (i == 2)
+				vm->players[i]->color = WHITE;
+			if (i == 3)
+				vm->players[i]->color = MAG;
+		}
+		i++;
+	}
+}
 
 static void	parse_dump_flag(char **argv, t_vm *vm)
 {
@@ -49,8 +71,8 @@ void 	parser(t_vm *vm, char **argv)
 			argv++;
 		else if (!ft_strcmp(*argv, "-visu"))
 			vm->vis_fl = 1;
-//		else if (!ft_strcmp(*argv, "-aff"))
-//			parse_aff(parser, vm);
+		else if (!ft_strcmp(*argv, "-aff"))
+			parse_aff(parser, vm);
 		else if (!ft_strcmp(*argv, "-stat"))
 			vm->stat_fl = 1;
 		else if (!ft_strcmp(*argv, "-alive"))

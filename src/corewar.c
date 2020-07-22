@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/05 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/20 15:45:24 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/22 20:39:17 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int			main(int argc, char **argv)
 		init_arena(vm);
 		init_cursors(vm);
 		run_vm(vm);
-//		print_winner(vm);
+		print_winner(vm);
 		free_vm(vm);
 	}
 	else

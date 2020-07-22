@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   print_stat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dheredat <dheredat@student.21school.ru>    +#+  +:+       +#+        */
+/*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/08 16:24:32 by dheredat          #+#    #+#             */
+/*   Created: 2020/07/08 14:32:21 by ddamaris          #+#    #+#             */
 /*   Updated: 2020/07/22 20:39:16 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/vm.h"
 
-char	*ft_strcpy(char *dst, const char *src)
+void 	print_live(t_vm *vm)
 {
-	unsigned char	*p_dst;
-	unsigned char	*p_src;
-	int				i;
 
-	p_dst = (unsigned char*)dst;
-	p_src = (unsigned char*)src;
-	i = 0;
-	while (*(p_src + i))
-	{
-		*(p_dst + i) = *(p_src + i);
-		i++;
-	}
-	*(p_dst + i) = *(p_src + i);
-	return (dst);
+}
+
+void 	print_operation(t_vm *vm)
+{
+
 }

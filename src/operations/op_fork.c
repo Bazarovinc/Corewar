@@ -12,20 +12,13 @@
 
 #include "vm.h"
 
-/*inline static void	log_fork(t_cursor *cursor, int32_t addr)
+static void	print_fork(t_cursor *cursor, int32_t addr)
 {
-	ft_printf("P %4d | fork %d (%d)\n",
-										cursor->id,
-										addr,
-										cursor->pc + addr % IDX_MOD);
-}*/
-
-/*void	add_cursor_1(t_cursor **list, t_cursor *new)
-{
-    if (new)
-        new->next = *list;
-    *list = new;
-}*/
+	ft_printf("%s", cursor->player->color);
+	ft_printf("cursor of %10s executes operation: fork ", cursor->player->name);
+	ft_printf("%d (%d)\n", addr,	cursor->pc + addr % IDX_MOD);
+	ft_printf("%s", NC);
+}
 
 void				op_fork(t_vm *vm, t_cursor *cursor)
 {
@@ -35,8 +28,6 @@ void				op_fork(t_vm *vm, t_cursor *cursor)
 	cursor->step += 1;
 	addr = get_op_arg(vm, cursor, 1, true);
 	duplicate_cursor(cursor, addr % IDX_MOD, vm);
-	//add_cursor_1(&(vm->cursors), new);
-	vm->cursors_num++;
-	/*if (vm->log & OP_LOG)
-		log_fork(cursor, addr);*/
+	if (vm->stat_fl)
+		print_fork(cursor, addr);
 }
