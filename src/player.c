@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 16:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/22 20:39:16 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/23 13:51:14 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static t_player	*init_player(t_vm  *vm)
 	t_player	*player;
 
 	if (!(player = (t_player *)ft_memalloc(sizeof(t_player))))
-		error_func("r-", "ERROR: Memory allocation error", vm);
+		error_func("r-", "ERROR: Memory allocation error");
 	player->id = 0;
 	player->name = NULL;
 	player->comment = NULL;
@@ -49,7 +49,7 @@ void		*add_player(char *filename, int id, t_vm *vm)
 	int			fd;
 
 	if ((fd = open(filename, O_RDONLY)) < 0)
-		error_func("r-", "ERROR: Can't open file with champion", vm);
+		error_func("r-", "ERROR: Can't open file with champion");
 	player = init_player(vm);
 	player->id = id;
 	parse_champion(fd, player, vm);

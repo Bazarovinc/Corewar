@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 14:32:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/22 21:16:05 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/23 13:51:14 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static void	parse_dump_flag(char **argv, t_vm *vm)
 	if ((num = ft_strtoint(*argv + 1)) >= 0)
 		vm->dump_fl = num;
 	else
-		error_func("r-", "ERROR: Wrong argument for -dump", vm);
+		error_func("r-", "ERROR: Wrong argument for -dump");
 }
 
 static int		parse_n_flag(char **argv, t_vm *vm)
@@ -52,11 +52,11 @@ static int		parse_n_flag(char **argv, t_vm *vm)
 	id = 0;
 	if ((id = ft_strtoint(*argv)) > 0 && id <= MAX_PLAYERS)
 	{
-		if (file_is_cor(*argv + 1, vm))
+		if (ft_strcmp(*(argv + 1), ".cor"))
 			add_player(*(argv + 1), id, vm);
 	}
 	else
-		error_func("r-", "ERROR: Wrong argument for -n", vm);
+		error_func("r-", "ERROR: Wrong argument for -n");
 	return (1);
 }
 
@@ -77,11 +77,11 @@ void 	parser(t_vm *vm, char **argv)
 			vm->stat_fl = 1;
 		else if (!ft_strcmp(*argv, "-alive"))
 			vm->alive_fl = 1;
-		else if (file_is_cor(*argv, vm))
+		else if (file_is_cor(*argv))
 			add_player(*argv, 0, vm);
 		argv++;
 	}
 	if (vm->players_num > MAX_PLAYERS || vm->players_num == 0)
-		error_func("r-", "ERROR: Wrong number of champions", vm);
+		error_func("r-", "ERROR: Wrong number of champions");
 	colorise_players(vm);
 }

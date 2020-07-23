@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/18 21:23:40 by ctelma            #+#    #+#             */
-/*   Updated: 2020/07/22 21:16:05 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/23 13:51:16 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ void				op_sti(t_vm *vm, t_cursor *cursor)
 	int32_t	addr_1;
 	int32_t	addr_2;
 
-	cursor->step += (OP_CODE_LEN + ARGS_CODE_LEN);
+	cursor->step += 2;
 	r_id = get_byte(vm, cursor->pc, cursor->step);
-	cursor->step += REG_LEN;
+	cursor->step += 1;
 	value = cursor->reg[r_id - 1];
 	addr_1 = get_op_arg(vm, cursor, 2, true);
 	addr_2 = get_op_arg(vm, cursor, 3, true);
