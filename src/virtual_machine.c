@@ -6,7 +6,7 @@
 /*   By: ddamaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/15 12:34:21 by ddamaris          #+#    #+#             */
-/*   Updated: 2020/07/22 21:16:05 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/23 13:51:15 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int		check_args(t_cursor *cursor, t_op *op, t_vm *vm)
 	step = (op->args_types_code) ? 2 : 1;
 	while (i < op->args_num)
 	{
-		if (!(cursor->args_types[i] & op->args_types[i]))
+		if ((cursor->args_types[i] != op->args_types[i]))
 			return (0);
 		if (cursor->args_types[i] == T_REG)
 		{
@@ -108,6 +108,4 @@ void			run_vm(t_vm *vm)
 		vm->cur_cycle++;
 		vm->cycles_after_check++;
 	}
-	if (vm->stat_fl)
-		ft_printf("\n\t\tNumber of cycles %d\t\n\n", vm->cur_cycle);
 }

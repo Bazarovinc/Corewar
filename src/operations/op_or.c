@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/18 21:23:31 by ctelma            #+#    #+#             */
-/*   Updated: 2020/07/22 21:16:05 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/23 13:51:16 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void				op_or(t_vm *vm, t_cursor *cursor)
 	cursor->carry = !value;
 	r_id = get_byte(vm, cursor->pc, cursor->step);
 	cursor->reg[r_id - 1] = value;
-	cursor->step += REG_LEN;
+	cursor->step += 1;
 	if (vm->stat_fl)
 		print_or(cursor, value_1, value_2, r_id);
 }

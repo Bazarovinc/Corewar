@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/18 21:23:51 by ctelma            #+#    #+#             */
-/*   Updated: 2020/07/22 21:16:05 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/23 13:51:15 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,12 @@ void		op_sub(t_vm *vm, t_cursor *cursor)
 	r1_id = get_byte(vm, cursor->pc, cursor->step);
 	cursor->step += 1;
 	r2_id = get_byte(vm, cursor->pc, cursor->step);
-	cursor->step += REG_LEN;
+	cursor->step += 1;
 	value = cursor->reg[r1_id - 1] - cursor->reg[r2_id - 1];
 	cursor->carry = !value;
 	r3_id = get_byte(vm, cursor->pc, cursor->step);
 	cursor->reg[r3_id - 1] = value;
-	cursor->step += REG_LEN;
+	cursor->step += 1;
 	if (vm->stat_fl)
 		print_sub(cursor, r1_id, r2_id, r3_id);
 }

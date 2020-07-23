@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/18 21:23:25 by ctelma            #+#    #+#             */
-/*   Updated: 2020/07/22 21:16:05 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/07/23 13:51:15 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void				op_lldi(t_vm *vm, t_cursor *cursor)
 	r_id = get_byte(vm, cursor->pc, cursor->step);
 	cursor->reg[r_id - 1] = bytecode_to_int32(vm->arena,
 			cursor->pc + (addr_1 + addr_2), DIR_SIZE);
-	cursor->step += REG_LEN;
+	cursor->step += 1;
 	if (vm->stat_fl)
 		print_lldi(cursor, addr_1, addr_2, r_id);
 }
