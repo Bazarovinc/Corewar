@@ -115,7 +115,7 @@ void					print_usage(t_vm *vm);
 //void					print_error(char *error, t_vm *vm);
 void					print_dump(u_int8_t *arena, t_vm *vm);
 void					print_winner(t_vm *vm);
-int						file_is_cor(char *str);
+int						file_is_cor(char *str, t_vm *vm);
 void					parser(t_vm *vm, char **argv);
 int						ft_strtoint(char *str);
 void					parse_champion(int fd, t_player *player, t_vm *vm);
@@ -133,7 +133,7 @@ int32_t					address_norming(int32_t addr);
 void					check_and_delete(t_vm *vm);
 int8_t					get_byte(t_vm *vm, int32_t pc, int32_t step);
 void					free_vm(t_vm *vm);
-void					error_func(char *clr, char *str);
+void					error_func(char *clr, char *str, t_vm *vm);
 
 /*
 ** Operations
