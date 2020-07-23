@@ -52,7 +52,7 @@ static int		parse_n_flag(char **argv, t_vm *vm)
 	id = 0;
 	if ((id = ft_strtoint(*argv)) > 0 && id <= MAX_PLAYERS)
 	{
-		if (ft_strcmp(*(argv + 1), ".cor"))
+		if (file_is_cor(*argv + 1, vm))
 			add_player(*(argv + 1), id, vm);
 	}
 	else
@@ -77,7 +77,7 @@ void 	parser(t_vm *vm, char **argv)
 			vm->stat_fl = 1;
 		else if (!ft_strcmp(*argv, "-alive"))
 			vm->alive_fl = 1;
-		else if (file_is_cor(*argv))
+		else if (file_is_cor(*argv, vm))
 			add_player(*argv, 0, vm);
 		argv++;
 	}

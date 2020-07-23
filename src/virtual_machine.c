@@ -108,4 +108,6 @@ void			run_vm(t_vm *vm)
 		vm->cur_cycle++;
 		vm->cycles_after_check++;
 	}
+	if (vm->stat_fl)
+		ft_printf("\n\t\tNumber of cycles %d\t\n\n", vm->cur_cycle);
 }

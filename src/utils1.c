@@ -66,12 +66,15 @@ int			ft_strtoint(char *str)
 		return (-1);
 }
 
-int			file_is_cor(char *str)
+int			file_is_cor(char *str, t_vm *vm)
 {
 	while (*str && *str != '.')
 		str++;
 	if (*str == '.' && !ft_strcmp(++str, "cor"))
 		return (1);
 	else
+	{
+		error_func("r-", "ERROR: Incorrect name of champion file", vm);
 		return (0);
+	}
 }

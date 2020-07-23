@@ -115,7 +115,7 @@ void					print_usage(t_vm *vm);
 //void					print_error(char *error, t_vm *vm);
 void					print_dump(u_int8_t *arena, t_vm *vm);
 void					print_winner(t_vm *vm);
-int						file_is_cor(char *str);
+int						file_is_cor(char *str, t_vm *vm);
 void					parser(t_vm *vm, char **argv);
 int						ft_strtoint(char *str);
 void					parse_champion(int fd, t_player *player, t_vm *vm);
