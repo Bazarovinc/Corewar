@@ -35,7 +35,7 @@ void			add_cursor(t_player *player, int32_t pc, t_vm *vm)
 	cursor = NULL;
 	if (!(cursor = (t_cursor *)malloc(sizeof(t_cursor))))
 		error_func("r-", "ERROR: Memory allocation error", vm);
-	init_cursor(player, cursor, 0);
+	init_cursor(player, cursor, pc);
 	if (!vm->cursors)
 		vm->cursors = cursor;
 	else

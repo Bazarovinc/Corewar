@@ -24,9 +24,9 @@ t_vm		*init_vm(void)
 	vm->cursors = NULL;
 	vm->cursors_num = 0;
 	vm->lives_num = 0;
-	vm->cur_cycle = 0;
+	vm->cur_cycle = 1;
 	vm->cycles_to_die = CYCLE_TO_DIE;
-	vm->cycles_after_check = 0;
+	vm->cycles_after_check = 1;
 	vm->checks_num = 0;
 	vm->vis_fl = 0;
 	vm->stat_fl = 0;

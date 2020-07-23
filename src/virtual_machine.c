@@ -94,6 +94,7 @@ void			run_vm(t_vm *vm)
 
 	while (vm->cursors_num)
 	{
+		ft_printf("\n\t\tNumber of cycles %d\t\n\n", vm->cur_cycle);
 		if (vm->dump_fl == vm->cur_cycle)
 			print_dump(vm->arena, vm);
 		cursor = vm->cursors;
@@ -108,6 +109,6 @@ void			run_vm(t_vm *vm)
 		vm->cur_cycle++;
 		vm->cycles_after_check++;
 	}
-	if (vm->stat_fl)
-		ft_printf("\n\t\tNumber of cycles %d\t\n\n", vm->cur_cycle);
+//	if (vm->stat_fl)
+//		ft_printf("\n\t\tNumber of cycles %d\t\n\n", vm->cur_cycle);
 }

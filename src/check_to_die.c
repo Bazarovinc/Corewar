@@ -96,5 +96,5 @@ void			check_and_delete(t_vm *vm)
 		vm->checks_num = 0;
 	}
 	reset_lives_nums(vm);
-	vm->cycles_after_check = 0;
+	vm->cycles_after_check = 1;
 }
