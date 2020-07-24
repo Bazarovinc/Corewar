@@ -31,19 +31,19 @@ void	print_live_msg(t_player *player)
 
 void				op_live(t_vm *vm, t_cursor *cursor)
 {
-	int32_t		player_id;
+	int		player_id;
 	t_player	*player;
 
 	cursor->step += 1;
-	player_id = get_op_arg(vm, cursor, 1, false);
-	vm->lives_num++;
+	player_id = (get_op_arg(vm, cursor, 1, false));
 	cursor->last_live_cycle = vm->cur_cycle;
 	player = NULL;
-	if (FT_ABS(player_id) == cursor->player->id)
+	if (player_id == cursor->reg[0])
 	{
 		player = vm->players[FT_ABS(player_id) - 1];
 		player->last_live_cycle = vm->cur_cycle;
 		player->curr_lives_num++;
+		vm->lives_num++;
 		vm->last_alive = player;
 /*		if (vm->vs)
 		{

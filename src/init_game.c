@@ -12,6 +12,18 @@
 
 #include "vm.h"
 
+void			update_cycles_to_exec(t_cursor *cursor, t_vm *vm)
+{
+	if (cursor->cycles_to_exec == 0)
+	{
+		cursor->op_code = vm->arena[cursor->pc];
+		if (vm->arena[cursor->pc] >= 0x01 && vm->arena[cursor->pc] <= 0x10)
+			cursor->cycles_to_exec = op_tab[cursor->op_code - 1].cycles;
+	}
+	if (cursor->cycles_to_exec > 0)
+		cursor->cycles_to_exec--;
+}
+
 void			init_cursor(t_player *player, t_cursor *cursor, int32_t pc)
 {
 	int32_t		cursor_id;
@@ -44,6 +56,7 @@ void			add_cursor(t_player *player, int32_t pc, t_vm *vm)
 		vm->cursors = cursor;
 		vm->cursors->next = tmp;
 	}
+	ft_printf("\tCursor player name - %s\n", cursor->player->name);
 	vm->cursors_num++;
 }
 void			init_cursors(t_vm *vm)

@@ -68,9 +68,10 @@ int			ft_strtoint(char *str)
 
 int			file_is_cor(char *str, t_vm *vm)
 {
-	while (*str && *str != '.')
-		str++;
-	if (*str == '.' && !ft_strcmp(++str, "cor"))
+	char 	*ext;
+
+	ext = &str[strlen(str) - 4];
+	if (!ft_strcmp(ext, ".cor"))
 		return (1);
 	else
 	{

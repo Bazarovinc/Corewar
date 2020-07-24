@@ -30,7 +30,7 @@ void	op_aff(t_vm *vm, t_cursor *cursor)
     r_id = get_byte(vm, cursor->pc, cursor->step);
     value = cursor->reg[r_id - 1];
     cursor->step += 1;
-    if (vm->aff_fl || vm->stat_fl)
+    if (vm->aff_fl)
         ft_printf("Aff: %c\n", (char)value);
     if (vm->stat_fl)
     	print_aff(cursor, (char)value);

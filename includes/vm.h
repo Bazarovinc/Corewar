@@ -55,13 +55,13 @@ typedef struct			s_player
 	int32_t				pc;
 	struct s_player		*next;
 }						t_player;
-
+/*
 static int8_t			arg_code[3] = {
 		T_REG,
 		T_DIR,
 		T_IND
 };
-
+*/
 typedef struct			s_cursor
 {
 	int					carry;
@@ -86,7 +86,7 @@ typedef struct			s_vm
 	size_t				cursors_num;
 	size_t				lives_num;
 	size_t				cur_cycle;
-	size_t				cycles_to_die;
+	int					cycles_to_die;
 	size_t				cycles_after_check;
 	size_t				checks_num;
 	int 				vis_fl;
@@ -125,6 +125,7 @@ void					init_cursors(t_vm *vm);
 void					init_arena(t_vm *vm);
 void					init_cursor(t_player *player, t_cursor *cursor,
 							int32_t pc);
+void					update_cycles_to_exec(t_cursor *cursor, t_vm *vm);
 void					add_cursor(t_player *player, int32_t pc, t_vm *vm);
 void					run_vm(t_vm *vm);
 int						step_over_arg(int8_t arg_type, t_op *op);

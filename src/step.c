@@ -15,7 +15,7 @@
 int		step_over_arg(int8_t arg_type, t_op *op)
 {
 	if (arg_type == T_REG)
-		return (REG_SIZE);
+		return (1);
 	else if (arg_type == T_DIR)
 		return (op->t_dir_size);
 	else if (arg_type == T_IND)

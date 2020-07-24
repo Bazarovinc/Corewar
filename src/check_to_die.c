@@ -79,8 +79,8 @@ void			check_and_delete(t_vm *vm)
 
 	vm->checks_num++;
 	cursor = vm->cursors;
-	if (vm->cycles_to_die <= 0)
-		ft_printf("%sCycle to die = %d, All champions must die%s", RED,
+	if (vm->cycles_to_die <= 0 && vm->stat_fl)
+		ft_printf("%sCycle to die = %d, All champions must die%s\n", RED,
 				  vm->cycles_to_die, NC);
 	while (cursor)
 	{
@@ -92,7 +92,8 @@ void			check_and_delete(t_vm *vm)
 	if (vm->checks_num == MAX_CHECKS || vm->lives_num >= NBR_LIVE)
 	{
 		vm->cycles_to_die -= CYCLE_DELTA;
-		print_cycle_to_die(vm);
+		if (vm->stat_fl)
+			print_cycle_to_die(vm);
 		vm->checks_num = 0;
 	}
 	reset_lives_nums(vm);

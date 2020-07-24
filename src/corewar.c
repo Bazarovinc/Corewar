@@ -31,7 +31,7 @@ t_vm		*init_vm(void)
 	vm->vis_fl = 0;
 	vm->stat_fl = 0;
 	vm->dump_fl = -1;
-	vm->aff_fl = -1;
+	vm->aff_fl = 0;
 	return (vm);
 }
 

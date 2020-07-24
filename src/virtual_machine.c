@@ -66,16 +66,15 @@ static void		do_operation(t_cursor *cursor, t_vm *vm)
 {
 	t_op *op;
 
-	if (cursor->cycles_to_exec > 0)
-		cursor->cycles_to_exec--;
-	else if (cursor->cycles_to_exec == 0)
+	update_cycles_to_exec(cursor, vm);
+	if (cursor->cycles_to_exec == 0)
 	{
 		cursor->op_code = vm->arena[cursor->pc];
 		op = NULL;
 		if (cursor->op_code >= 0x01 && cursor->op_code <= 0x10)
 		{
-			cursor->cycles_to_exec = op_tab[cursor->op_code - 1].cycles;
 			op = &op_tab[cursor->op_code - 1];
+//			ft_printf("Operation %s\tCursor player name - %s\n", op->name, cursor->player->name);
 			parse_args_types(cursor, op, vm);
 			if (check_args(cursor, op, vm))
 				op->func(vm, cursor);
@@ -94,7 +93,7 @@ void			run_vm(t_vm *vm)
 
 	while (vm->cursors_num)
 	{
-		ft_printf("\n\t\tNumber of cycles %d\t\n\n", vm->cur_cycle);
+//		ft_printf("\n\t\tNumber of cycles %d\t\n\n", vm->cur_cycle);
 		if (vm->dump_fl == vm->cur_cycle)
 			print_dump(vm->arena, vm);
 		cursor = vm->cursors;
