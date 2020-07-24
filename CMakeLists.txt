@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(Corewar C)
+project(working C)
 
 set(CMAKE_C_STANDARD 11)
 
@@ -7,7 +7,7 @@ include_directories(ft_printf)
 include_directories(includes)
 include_directories(libft/inc)
 
-add_executable(Corewar
+add_executable(working
         ft_printf/ft_bzero.c
         ft_printf/ft_is_flag.c
         ft_printf/ft_printf.c
