@@ -14,6 +14,7 @@
 #ifndef VM_H
 # define VM_H
 
+# include "ft_drow.h"
 # include "../libft/inc/libft.h"
 # include "../ft_printf/ft_printf.h"
 # include <stdbool.h>
