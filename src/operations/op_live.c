@@ -38,7 +38,7 @@ void				op_live(t_vm *vm, t_cursor *cursor)
 	player_id = (get_op_arg(vm, cursor, 1, false));
 	cursor->last_live_cycle = vm->cur_cycle;
 	player = NULL;
-	if (player_id == cursor->reg[0])
+	if (player_id == cursor->player->id)
 	{
 		player = vm->players[FT_ABS(player_id) - 1];
 		player->last_live_cycle = vm->cur_cycle;
